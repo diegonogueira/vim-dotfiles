@@ -21,6 +21,6 @@ ln -sf ~/.vim.d/vim ~/.vim
 # clone vundle plugin
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-vim -u NONE +PluginInstall +qall
+vim +PluginInstall +qall
 
 echo 'Instaled!'
