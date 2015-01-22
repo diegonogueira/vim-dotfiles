@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # backup
-if [ ! -d "$HOME/.vimrc" ]; then
+if [ -d "$HOME/.vimrc" ]; then
   mv ~/.vimrc ~/.vimrc.backup
   echo '~/.vimrc.backup created'
 fi
 
-if [ ! -d "$HOME/.vim" ]; then
+if [ -d "$HOME/.vim" ]; then
   mv ~/.vim ~/.vim.backup
   echo '~/.vim.backup created'
 fi
