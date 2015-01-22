@@ -11,6 +11,9 @@ if [ -d "$HOME/.vim" ]; then
   echo '~/.vim.backup created'
 fi
 
+# clone the repository
+git clone git@github.com:diegonogueira/vim-dotfiles.git .vim.d
+
 # create symbol links
 ln -sf vimrc.vim ~/.vimrc
 ln -sf vim ~/.vim
