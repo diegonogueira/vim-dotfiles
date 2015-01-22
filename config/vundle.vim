@@ -7,7 +7,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'                " ...unless we type a capital
 Plugin 'kien/ctrlp.vim'                   " ...fuzzy
-Plugin 'ctrlp_bdelete.vim'                " ...delete ctrlp buffer
+Plugin 'd11wtq/ctrlp_bdelete.vim'         " ...delete ctrlp buffer
 Plugin 'tpope/vim-surround'               " ...parentheses, brackets, quotes, XML tags, and more
 Plugin 'bling/vim-airline'                " ...status bar improvements
 Plugin 'Raimondi/delimitMate'             " ...auto-completion for quotes, parens, brackets, etc
