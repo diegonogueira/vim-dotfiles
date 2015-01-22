@@ -2,5 +2,5 @@
 set nocompatible
 
 " Load configs files
-source ~/.vim.d/vundle.vim
-source ~/.vim.d/editor.vim
+source ~/.vim.d/config/vundle.vim
+source ~/.vim.d/config/editor.vim

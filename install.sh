@@ -13,7 +13,7 @@ fi
 
 # create symbol links
 ln -sf vimrc.vim ~/.vimrc
-ln -sf vim.vim ~/.vim
+ln -sf vim ~/.vim
 
 # install vundle plugins
 vim +PluginInstall +qall

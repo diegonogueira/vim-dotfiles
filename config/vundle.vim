@@ -25,7 +25,7 @@ Plugin 'ekalinin/Dockerfile.vim'          " ...docker file
 call vundle#end()            " required
 
 " Load plugin configs files
-source ~/.vim.d/plugins/ctrlp.vim
-source ~/.vim.d/plugins/ctrlp_bdelete.vim
-source ~/.vim.d/plugins/nerdtree.vim
-source ~/.vim.d/plugins/easymotion.vim
+source ~/.vim.d/config/plugins/ctrlp.vim
+source ~/.vim.d/config/plugins/ctrlp_bdelete.vim
+source ~/.vim.d/config/plugins/nerdtree.vim
+source ~/.vim.d/config/plugins/easymotion.vim
