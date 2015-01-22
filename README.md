@@ -1,2 +1,2 @@
-# vim-dotfiles
-My vim dotfiles
+# Installation
+sh -c "`curl -fsSL https://raw.github.com/diegonogueira/vim-dotfiles/master/install.sh`"
