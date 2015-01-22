@@ -16,6 +16,6 @@ git clone git@github.com:diegonogueira/vim-dotfiles.git .vim.d
 
 # create symbol links
 ln -sf ~/.vim.d/vimrc.vim ~/.vimrc
-mkdir ~/.vim
+ln -sf ~/.vim.d/vim ~/.vim
 
 echo 'Instaled!'
