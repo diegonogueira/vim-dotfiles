@@ -18,10 +18,4 @@ git clone git@github.com:diegonogueira/vim-dotfiles.git .vim.d
 ln -sf ~/.vim.d/vimrc.vim ~/.vimrc
 ln -sf ~/.vim.d/vim ~/.vim
 
-# install vundle plugins
-vim +PluginInstall +qall
-
-# reload
-source ~/.vimrc
-
 echo 'Instaled!'
