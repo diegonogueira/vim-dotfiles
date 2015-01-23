@@ -14,6 +14,7 @@ Plugin 'Raimondi/delimitMate'             " ...auto-completion for quotes, paren
 Plugin 'scrooloose/nerdtree'              " ...tree navigation
 Plugin 'altercation/vim-colors-solarized' " ...solarized theme
 Plugin 'jpo/vim-railscasts-theme'         " ...railscasts theme
+Plugin 'jnurmine/Zenburn'                 " ...zenburn theme ( emacs ) :)
 Plugin 'scrooloose/nerdcommenter'         " ...commenter
 Plugin 'Lokaltog/vim-easymotion'          " ...provides a much simpler way to use some motions in vim
 Plugin 'ervandew/supertab'                " ...perform all your vim insert mode completions with Tab 

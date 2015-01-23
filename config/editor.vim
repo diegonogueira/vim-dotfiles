@@ -92,8 +92,10 @@ set ignorecase      " Ignore case when searching...
 
 set background=dark
 " colorscheme solarized
-colorscheme railscasts
-
+" colorscheme railscasts
+colorscheme zenburn
+set guifont=*
+set guifont=Monaco:h13
 " copy and paste
 "
 vmap <C-c> "+yi
