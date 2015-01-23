@@ -16,7 +16,7 @@ git clone git@github.com:diegonogueira/vim-dotfiles.git .vim.d
 
 # create symbol links
 ln -sf ~/.vim.d/vimrc.vim ~/.vimrc
-ln -sf ~/.vim.d/vim ~/.vim
+mkdir ~/.vim
 
 # clone vundle plugin
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
