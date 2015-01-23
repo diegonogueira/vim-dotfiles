@@ -91,13 +91,16 @@ set ignorecase      " Ignore case when searching...
 " ================ Theme ============================
 
 set background=dark
-" colorscheme solarized
-" colorscheme railscasts
-colorscheme zenburn
 set guifont=*
-set guifont=Monaco:h13
-" copy and paste
-"
+if has("gui_gtk2")
+  set guifont=Monospace\ 11
+else
+  set guifont=Monaco:h13
+end
+colorscheme zenburn "solarized, railscasts
+
+" ============= copy and paste ======================
+
 vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
