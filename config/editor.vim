@@ -107,3 +107,7 @@ vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
+
+" ============= alternate buffer ====================
+
+map <C-TAB> <C-6>
