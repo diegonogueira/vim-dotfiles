@@ -17,7 +17,6 @@ Plugin 'jpo/vim-railscasts-theme'         " ...railscasts theme
 Plugin 'jnurmine/Zenburn'                 " ...zenburn theme ( emacs ) :)
 Plugin 'scrooloose/nerdcommenter'         " ...commenter
 Plugin 'Lokaltog/vim-easymotion'          " ...provides a much simpler way to use some motions in vim
-Plugin 'ervandew/supertab'                " ...perform all your vim insert mode completions with Tab 
 Plugin 'godlygeek/tabular'                " ...tabulate and alignment
 Plugin 'slim-template/vim-slim.git'       " ...vim slim
 Plugin 'ekalinin/Dockerfile.vim'          " ...docker file
