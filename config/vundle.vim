@@ -12,8 +12,6 @@ Plugin 'tpope/vim-surround'               " ...parentheses, brackets, quotes, XM
 Plugin 'bling/vim-airline'                " ...status bar improvements
 Plugin 'Raimondi/delimitMate'             " ...auto-completion for quotes, parens, brackets, etc
 Plugin 'scrooloose/nerdtree'              " ...tree navigation
-Plugin 'altercation/vim-colors-solarized' " ...solarized theme
-Plugin 'jpo/vim-railscasts-theme'         " ...railscasts theme
 Plugin 'jnurmine/Zenburn'                 " ...zenburn theme ( emacs ) :)
 Plugin 'scrooloose/nerdcommenter'         " ...commenter
 Plugin 'Lokaltog/vim-easymotion'          " ...provides a much simpler way to use some motions in vim

@@ -99,7 +99,7 @@ if has("gui_gtk2")
 else
   set guifont=Monaco:h13
 end
-colorscheme zenburn "solarized, railscasts
+colorscheme zenburn
 
 " ============= copy and paste ======================
 
