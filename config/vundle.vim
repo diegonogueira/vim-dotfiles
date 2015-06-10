@@ -19,6 +19,7 @@ Plugin 'godlygeek/tabular'                " ...tabulate and alignment
 Plugin 'slim-template/vim-slim.git'       " ...vim slim
 Plugin 'ekalinin/Dockerfile.vim'          " ...docker file
 Plugin 'terryma/vim-multiple-cursors'     " ...Multiple Cursors
+Plugin 'mileszs/ack.vim'                  " ...Run your favorite search tool from Vim, with an enhanced results list.
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
