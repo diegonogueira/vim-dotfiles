@@ -9,6 +9,10 @@ set autoread                    "Reload files changed outside vim
 set guioptions-=T               "Remove toobar
 set guioptions-=m               "Remove menu
 
+" Disable new line on end file
+set binary
+set noeol
+
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
 " http://items.sjbach.com/319/configuring-vim-right
