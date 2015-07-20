@@ -93,6 +93,7 @@ set sidescroll=1
 set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
+nnoremap <silent> <Esc><Esc> :let @/=""<CR> " Cancel highlighting
 
 " ================ Theme ============================
 
