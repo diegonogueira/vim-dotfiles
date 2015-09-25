@@ -20,6 +20,10 @@ Plugin 'slim-template/vim-slim.git'       " ...vim slim
 Plugin 'ekalinin/Dockerfile.vim'          " ...docker file
 Plugin 'terryma/vim-multiple-cursors'     " ...Multiple Cursors
 Plugin 'mileszs/ack.vim'                  " ...Run your favorite search tool from Vim, with an enhanced results list.
+Plugin 'mattn/emmet-vim'                  " ...Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow:
+" Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
