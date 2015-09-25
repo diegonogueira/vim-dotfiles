@@ -24,6 +24,7 @@ Plugin 'mattn/emmet-vim'                  " ...Emmet is a plugin for many popula
 " Snippets
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'elixir-lang/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
