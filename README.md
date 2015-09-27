@@ -82,3 +82,34 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```<n>i<c> <ESC>```                                       | Adiciona <c> <n> vezes atual |
 | ```r```                                           | Abre o modo insert para trocar pelo caracter selecionado, após a troca, automaticamente volta para modo normal |
 | ```R```                                                   | Abre o modo insert para trocar pelo caracter selecionado, porém não volta para modo normal. Ele vai alterando os caracteres correspondentes. Igual a tecla <INSERT> |
+
+### Excluindo caracteres
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```dw```                                                   | Apaga uma palavra, posicionado no início da palavra |
+| ```diw```                                 | Apaga a palavra atual, não importando em que parte da palavra esta |
+| ```daw``` | Apaga a palavra atual e o espaço para a outra palavra, não importando em que parte da palavra esta |
+| ```dip```                                                   | Apaga o paragrafo atual |
+| ```dap```                                                   | Apaga o paragrafo atual e a linha, posicionando no próximo parágrafo |
+| ```d<n>b```                                                   | Apaga <n> vezes as palavras anteriores |
+| ```dd```                                                   | Deleta a linha atual |
+| ```D```                                                   | Deleta o restante da linha |
+| ```C```                                                   | Deleta até o final da linha e muda para modo inserção |
+| ```d$```                                                   | Deleta do ponto atual até o final da linha |
+| ```d^```                                                   | Deleta do ponto atual até o início da linha do primeiro caracter não espaço |
+| ```d0```                                                   | Deleta do ponto atual até o início da linha |
+| ```d%```                                                   | Apaga até o fechamento dos ), }, ] |
+| ```df<c>```                               | Deleta do ponto atual até a próxima ocorrência encontrada em <c> |
+| ```dF<c>```                               | Deleta do ponto atual até a ocorrência anterior encontrada em <c> |
+| ```<b>,<e> d```                           | Deleta da linha <b> até <e> |
+| ```x```                                   | Apaga o caracter sob o cursor |
+| ```xp```                                  | Troca os caracteres de lugar |
+| ```ddp```                                                   | Troca as linhas de lugar |
+| ```da”```                                                   | Deleta conteúdo entre aspas |
+| ```<n>+Exclusão```                                          | Apaga a quantidade de <n> informado ao comando |
+| ```—> Ex: 5x:```                                            | Apaga os próximos 5 caracteres |
+| ```—> Ex: 5dd```                                            | Apaga as próximas 5 linhas |
+| ```ciw```                               | Remove a palavra, e troca para modo de inserção |
+| ```:g/TEXTO/d```                                            | Deleta a palavra Texto no arquivo |
+| ```J```                                            | Junta a linha de baixo com a atual |
