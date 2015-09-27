@@ -66,3 +66,19 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```—> Ex: 5k```                                                 | Move para 5 linhas acima |
 | ```Ctrl+f```                                                         | Desce a paginação |
 | ```Ctrl+b```                                                         | Sobre a paginação |
+
+### Digitação
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```i```                                                   | Entra em modo edição antes do caracter atual |
+| ```I```                                                   | Entra em modo de edição no começo da linha |
+| ```a```                                                   | Entra em modo de edição após o caracter atual |
+| ```A```                                                   | Entra em modo de edição no final da linha |
+| ```o```                                                   | Entra em modo de edição uma linha abaixo |
+| ```O```                                                   | Entra em modo de edição uma linha acima |
+| ```s```                                                   | Entra em modo de edição apagando o caracter da frente |
+| ```S```                 | Entra em modo de edição no início da linha indentado ( quando não for espaço ) |
+| ```<n>i<c> <ESC>```                                       | Adiciona <c> <n> vezes atual |
+| ```r```                                           | Abre o modo insert para trocar pelo caracter selecionado, após a troca, automaticamente volta para modo normal |
+| ```R```                                                   | Abre o modo insert para trocar pelo caracter selecionado, porém não volta para modo normal. Ele vai alterando os caracteres correspondentes. Igual a tecla <INSERT> |
