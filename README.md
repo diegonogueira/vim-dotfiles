@@ -102,7 +102,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```d%```                                                   | Apaga até o fechamento dos ), }, ] |
 | ```df<c>```                               | Deleta do ponto atual até a próxima ocorrência encontrada em <c> |
 | ```dF<c>```                               | Deleta do ponto atual até a ocorrência anterior encontrada em <c> |
-| ```<b>,<e> d```                           | Deleta da linha <b> até <e> |
+| ```<b>,<e> d```                           | Deleta da linha \<b> até <e> |
 | ```x```                                   | Apaga o caracter sob o cursor |
 | ```xp```                                  | Troca os caracteres de lugar |
 | ```ddp```                                                   | Troca as linhas de lugar |
@@ -113,3 +113,65 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```ciw```                               | Remove a palavra, e troca para modo de inserção |
 | ```:g/TEXTO/d```                                            | Deleta a palavra Texto no arquivo |
 | ```J```                                            | Junta a linha de baixo com a atual |
+
+### Copiar e colar
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```yy OU Y```                                         | Copia a linha atual |
+| ```ye```                                              | Copia do cursor até o fim da palavra |
+| ```yb```                                              | Copia do cursor ao início da palavra |
+| ```yi"```                                             | Copia o conteúdo entre aspas |
+| ```yip```                                             | Copia o paragrafo atual |
+| ```yit```                                             | Copia a tag atual <h1></h1> |
+| ```yf<c>```                                           | Copia até a próxima ocorrência encontrada |
+| ```yF<c>```                                           | Copia até ocorrência anterior encontrada |
+| ```<n>Y```                                            | Copia <n> linhas |
+| ```<b>,<e> Y```                                       | Copiar da linha \<b> até <e> |
+| ```p```                                               | Cola o que foi copiado ou deletado uma linha abaixo |
+| ```P```                                               | Cola o que foi copiado ou deletado uma linha acima |
+| ```]p```                                              | cola o que foi copiado ou deletado após o cursor |
+| ```:20,30m 10```                                      | Move a da linha 20 até 30 para a linha 10 |
+| ```:m-5```                                            | Move a linha atual 5 posições acima          |
+| ```:m$```                                             | Move a linha atual para o final              |
+| ```:10t.```                                           | Copia a linha 10 para a linha atual          |
+| ```:t10```                                            | Copia a linha atual para a linha 10          |
+| ```yyp OU :t.```                                      | Duplica a linha atual                        |
+| ```:t$```                                             | Copia a linha atual para o final do arquivo  |
+| ```Vjj :t10```                                        | Copia o conteúdo selecionado para a linha 10 |
+| ```:m10```                                            | Move a linha atual para a linha 10           |
+| ```:10m.```                                           | Move a linha 10 para a linha atual           |
+| ```Vjj :m10```                                        | Move o conteúdo selecionado para a linha 10  |
+
+### Selecionando ( modo visual )
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```v```                                           | Entra no modo visual selecionando o caracter |
+| ```V```                                           | Entra no modo visual, selecionando a linha |
+| ```<C-v>```                                           | Entra no modo visual, selecionando o bloco |
+| ```gv```                                           | Vai para a última seleção utilizada |
+| ```vap```                                           | Seleciona o paragrafo |
+| ```vip```                                           | Seleciona o paragrafo |
+| ```vi}```                                           | Seleciona o conteúdo entre {} |
+| ```va}```                                           | Seleciona tudo entre {}, inclusive as {} |
+| ```vit```                                           | Seleciona o trecho com a tab. <tag>trecho</tag> |
+| ```o```                                           | Alterna entre o início da seleção e depois da seleção. Necessário ter um trecho selecionado |
+| ```var a = 1```<br>```var b = 2```<br>```var c = 3```<br>```<C-v>jj$```<br>```A;```<br>```<Ctrl-[>```                                           | Coloca ; no final de cada linha. |
+
+### Buscando no arquivo
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```/<t> OU <regexp>```                                           | Pesquisa pela palavra <t> ou pela regexp |
+| ```—> n:```                                           | Move para a próxima ocorrência encontrada |
+| ```—> N:```                                           | Move para a ocorrência anterior |
+| ```:noh OU <CTRL-[> <CTRL-[>```                       | Desabilita o highlighting |
+
+### Buscando e alterando trechos
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:s/<b>/<e>```                                  | Muda tudo que achar de \<b> para <e> na linha |
+| ```:%s/<b>/<e>```                                 | Muda tudo que achar de \<b> para <e> no arquivo inteiro |
+| ```:1,10 s/<b>/<e>```                             | Muda tudo que achar de \<b> para <e> somente da linha 1 a 10 |
