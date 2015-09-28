@@ -18,6 +18,25 @@ Adicionar em vundle.vim e rodar no terminal:
 
 # Como usar
 
+* [Modos](#modos)
+* [Navegação](#navegação)
+* [Digitação](#digitação)
+* [Excluindo caracteres](#excluindo-caracteres)
+* [Copiar e colar](#copiar-e-colar)
+* [Selecionando ( modo visual )](#selecionando--modo-visual-)
+* [Buscando no arquivo](#buscando-no-arquivo)
+* [Buscando e alterando trechos](#buscando-e-alterando-trechos)
+* [Trabalhando com arquivos](#trabalhando-com-arquivos)
+* [Janelas, buffers](#janelas-buffers)
+* [File explorer](#file-explorer)
+* [Desfazendo e refazendo](#desfazendo-e-refazendo)
+* [Ordenando linhas](#ordenando-linhas)
+* [Vimgrep ( busca em todos os arquivos ) lento!](#vimgrep--busca-em-todos-os-arquivos--lento)
+* [Ack ( busca em todos os arquivos )](#ack--busca-em-todos-os-arquivos-)
+* [Find and replace all](#find-and-replace-all)
+* [Indentação](#indentação)
+* [Manipulando texto](#manipulando-texto)
+
 ### Modos
 
 | Modo      | Comando                     |
@@ -284,3 +303,131 @@ http://beyondgrep.com/documentation/
 | ```gUap OU``` OU<br>```gUip```    | Converte o paragrafo atual para maiúsculo |
 | ```gggUG```                          | Converte todo arquivo para maiúsculo |
 | ```~```                          | Troca o case do caracter |
+
+### Macro
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```qa```<br>```Faça suas edições serem gravadas```<br>```q```` | Inicia a gravação no registro a <br> . <br> Termina a gravação |
+| ```@a```                          | Executa a macro do registro a |
+| ```10@a```                          | Roda 10 vezes a macro do registro a |
+| ```:reg a```                          | Ve o que esta gravado na macro |
+
+### Desfazendo e refazendo
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```<C-n>```                          | Vai para a próxima palavra encontarda |
+| ```<C-p>```                          | Vai para a palavra anterior encontrada |
+| ```<C-y>```                          | Aceita a sugestão |
+| ```<C-e>```                          | Reverte para o ponto sem autocomplete |
+
+### Máquina do tempo
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:earlier 10m```                    | Volta o arquivo como estava a 10 minutos atrás |
+| ```:later 10m```                      | Após utilizar o earlier, você ir para frente 10 minutos |
+| ```:undolist```                       | Lista as modificações no arquivo |
+| ```:undo <b>```                      | Volta a versão especifica no undolist |
+
+### CtrlP ( Gerenciador de projetos )
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```,p```                          | Vai para a home do usuário para mudar de projeto |
+| ```,t```                          | Abre a busca de arquivo ( vai se basear no projeto que está ) |
+| ```,b```                          | Lista os buffers abertos |
+| ```<Ctrl>-j / <Ctrl>-k```                          | Navega nos buffers abertos |
+| ```<Ctrl-z>```                          | Marca para exclusão |
+| ```<Ctrl>-@```                          | Fecha o buffer selecionado ( plugin a parte ) |
+| ```,t```<br>```/path/arquivo```<br>```<Ctrl-y>```   | Cria o arquivo |
+
+### Tabular
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```VG:Tabularize /=```                          | Tabula o texto selecionado pelo = |
+
+### Multiple cursors
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```viw```<br>```<C-n>```<br>```<C-x>```<br>```<C-p>```    | Seleciona a palavra <br> Seleciona a próxima palavra <br> Ignora  palavra <br> Volta a seleção da uma palavra |
+| ```c```                          | Entra em modo de alteração de todas as seleções |
+| ```i```                          | Entra em modo de inserção de todas as seleções |
+| ```<C-n>```                     | Seleciona a palavra automaticamente. Dai é só navegar <C-n>, <C-x>, <C-p> |
+
+### EasyMotion
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```,s<c>```                          | Faz a busca de 2 caracteres, indexando atalhos para mover-se |
+| ```/<c>```                          | busca <c> no arquivo |
+| ```:noh OU <C-[> <C-[>```                          | Desabilita o highlighting |
+
+### NERDCommenter
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```,cc```                          | Comenta |
+| ```,ci```                          | Comenta e descomenta |
+| ```,cu```                          | Descomenta |
+
+### Surround
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```Selecione em movo visual - S"```          | Coloca entre aspas o conteúdo |
+| ```Selecione em movo visual - S<p>```         | Remove “ da palavra |
+| ```ds"```                          | Remove “ da palavra |
+| ```viwS"```                          | Coloca a palavra entre aspas |
+| ```cs”(```                          | Troca “ por ( com espaço |
+| ```cs”)```                          | Troca “ por ( sem espaço |
+
+### NERDTree
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```,n```                          | Alterna entre o NERDTree aberto e fechado |
+| ```o```                          | Abre a pasta |
+| ```<ENTER>```                          | Abre o arquivo |
+| ```j e k```                          | Navegando entre os arquivos |
+| ```m```                          | Abre menu com opções para editar, apagar o arquivo |
+| ```C```                          | Define a passta como root |
+
+### Emmet ( html )
+
+http://docs.emmet.io/cheat-sheet/<br>
+http://docs.emmet.io/<br>
+http://docs.emmet.io/abbreviations/syntax/<br>
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```html:5 <ctrl+y+,>```                          | cria um documento padrão html 5 |
+
+### Ultisnips ( snippets )
+
+https://github.com/SirVer/ultisnips
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```class [TAB]```                          | Chama o snippet |
+| ```C-j```                          | Vai para a próxima inserção no snippet |
+| ```C-k```                          | Volta para a inserção anterior do snippet |
+
+### Outros
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```.```                          | Repete o último comando |
+| ```!<b>```                          | Executa o comando bash <b>. Ex: !ls |
+| ```vim -u NONE```                          | Abrir o vim na sua configuração original |
+| ```:echo 5 * 3```                          |  Exibe o resultado da multiplicação |
+
+### Dúvidas
+
+* Auto trailling ( remover espaços automaticamente ao salvar? )
+* Auto indentação esta ficando em baixo do parênteses
+* Abrir nerdtree no projeto do ctrlp
+* Como ir até a próxima letra maiúscula ex: ( UsersController ) _Controller
