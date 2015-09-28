@@ -435,7 +435,7 @@ https://github.com/SirVer/ultisnips
 | Comando                                                   | Descrição                            |
 | --------------------------------------------------------- | ------------------------------------ |
 | ```.```                          | Repete o último comando |
-| ```!<b>```                          | Executa o comando bash <b>. Ex: !ls |
+| ```!<b>```                          | Executa o comando bash \<b>. Ex: !ls |
 | ```vim -u NONE```                          | Abrir o vim na sua configuração original |
 | ```:echo 5 * 3```                          |  Exibe o resultado da multiplicação |
 
