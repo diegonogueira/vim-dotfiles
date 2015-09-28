@@ -61,9 +61,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```(```                                                         | Pula uma sentença para trás |
 | ```}```                                                         | Pula um paragrafo para frente |
 | ```{```                                                         | Pula um paragrafo para trás |
-| ```<n>+Navegação```                                             | Diz o quantificador e a forma de navegação desejada |
-| ```—> Ex: 3w```                                                 | Move para a 3 palavra |
-| ```—> Ex: 5k```                                                 | Move para 5 linhas acima |
+| ```<n>+Navegação```<br>```Ex: 3w```<br>```Ex: 5k```  | Diz o quantificador e a forma de navegação desejada <br> Move para a 3 palavra <br> Move para 5 linhas acima|
 | ```Ctrl+f```                                                         | Desce a paginação |
 | ```Ctrl+b```                                                         | Sobre a paginação |
 
@@ -107,9 +105,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```xp```                                  | Troca os caracteres de lugar |
 | ```ddp```                                                   | Troca as linhas de lugar |
 | ```da”```                                                   | Deleta conteúdo entre aspas |
-| ```<n>+Exclusão```                                          | Apaga a quantidade de <n> informado ao comando |
-| ```—> Ex: 5x:```                                            | Apaga os próximos 5 caracteres |
-| ```—> Ex: 5dd```                                            | Apaga as próximas 5 linhas |
+| ```<n>+Exclusão```<br>```Ex: 5x```<br>```Ex: 5dd``` | Apaga a quantidade de <n> informado ao comando <br> Apaga os próximos 5 caracteres <br> Apaga as próximas 5 linhas |
 | ```ciw```                               | Remove a palavra, e troca para modo de inserção |
 | ```:g/TEXTO/d```                                            | Deleta a palavra Texto no arquivo |
 | ```J```                                            | Junta a linha de baixo com a atual |
@@ -163,9 +159,7 @@ Adicionar em vundle.vim e rodar no terminal:
 
 | Comando                                                   | Descrição                            |
 | --------------------------------------------------------- | ------------------------------------ |
-| ```/<t> OU <regexp>```                                           | Pesquisa pela palavra <t> ou pela regexp |
-| ```—> n:```                                           | Move para a próxima ocorrência encontrada |
-| ```—> N:```                                           | Move para a ocorrência anterior |
+| ```/<t> OU <regexp>```<br>```n```<br>```N```  | Pesquisa pela palavra <t> ou pela regexp <br> Move para a próxima ocorrência encontrada <br> Move para a ocorrência anterior |
 | ```:noh OU <CTRL-[> <CTRL-[>```                       | Desabilita o highlighting |
 
 ### Buscando e alterando trechos
@@ -175,3 +169,44 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```:s/<b>/<e>```                                  | Muda tudo que achar de \<b> para <e> na linha |
 | ```:%s/<b>/<e>```                                 | Muda tudo que achar de \<b> para <e> no arquivo inteiro |
 | ```:1,10 s/<b>/<e>```                             | Muda tudo que achar de \<b> para <e> somente da linha 1 a 10 |
+
+
+### Trabalhando com arquivos
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:w```                          | Salva o arquivo |
+| ```:w!```                         | Salva forçando |
+| ```:e!```                         | Reinicia a edição, ignorando alterações |
+| ```:w arquivo```                  | Salvar como e permanece no arquivo original |
+| ```:w! >> arquivo```              | Salvar como e permanece no arquivo original |
+| ```:wq```                         | Salva e sai |
+| ```:x```                          | Salva se existirem modificações |
+| ```:10, 20 w arquivo```           | Salva o trecho selecionado em outro arquivo |
+| ```:saveas arquivo```             | Salvar como e abrir o arquivo novo |
+| ```:e! arquivo```                 | Abre um novo arquivo sem salvar o atual |
+| ```Ctrl-6```                      | Alterna entre dois arquivos abertos |
+| ```:r arquivo```                  | Abre o arquivo na linha em questão |
+| ```:<n>r arquivo```               | Abre o arquivo na linha <n> |
+| ```‘0```                          | Abre o último arquivo editado |
+| ```‘1```                          | Abre o penúltimo arquivo editadoo |
+
+### Trabalhando com arquivos
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:buffers```                          | Lista os arquivos abertos |
+| ```:buf <n>```                          | Vai para o buffer <n>, listado pelo buffers |
+| ```:wn```                          | Salva o arquivo atual e vai para o próximo |
+| ```Ctrl-w-v```                          | Cria uma janela ao lado |
+| ```Ctrl-w-s```                          | Cria uma janela a baixo |
+| ```Ctrl-w-w```                          | Alterna entre as janelas |
+| ```Ctrl-w-l```                          | Vai para a janela da direita |
+| ```Ctrl-w-h```                          | Vai para a janela da esquerda |
+| ```Ctrl-w-j```                          | Vai para a janela a baixo |
+| ```Ctrl-w-k```                          | Vai para a janela de cima |
+| ```Ctrl-w-o```                          | Vai a janela atual ser única |
+| ```Ctrl-w-+```                          | Aumenta o espaço da janela atual |
+| ```Ctrl-w--```                          | Diminui o espaço da janela atual |
+| ```:wall```                          | Salva todas as janelas |
+| ```:qall```                          | Fecha todas as janelas |
