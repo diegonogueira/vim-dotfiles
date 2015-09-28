@@ -272,14 +272,15 @@ http://beyondgrep.com/documentation/
 | ```<<```                          | Recua no modo normal |
 | ```>ap```                          | Avança o paragrafo atual |
 
-### Desfazendo e refazendo
+### Manipulando texto
 
 | Comando                                                   | Descrição                            |
 | --------------------------------------------------------- | ------------------------------------ |
-| ```u```                          | Desfaz |
-| ```u```                          | Desfaz |
-| ```u```                          | Desfaz |
-| ```u```                          | Desfaz |
-| ```u```                          | Desfaz |
-| ```u```                          | Desfaz |
-| ```u```                          | Desfaz |
+| ```gU```                          | Converte o texto selecionado no modo visual para maiúsculo |
+| ```gu```                          | Converte o texto selecionado no modo visual para minúsculo |
+| ```gUU```                          | Converte a linha para maiúsculo no modo normal |
+| ```guu```                          | Converte a linha para minúsculo no modo normal |
+| ```gUiw```                          | Converte a palavra atual para maiúsculo |
+| ```gUap OU``` OU<br>```gUip```    | Converte o paragrafo atual para maiúsculo |
+| ```gggUG```                          | Converte todo arquivo para maiúsculo |
+| ```~```                          | Troca o case do caracter |
