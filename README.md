@@ -36,6 +36,20 @@ Adicionar em vundle.vim e rodar no terminal:
 * [Find and replace all](#find-and-replace-all)
 * [Indentação](#indentação)
 * [Manipulando texto](#manipulando-texto)
+* [Macro](#macro)
+* [Auto-complete](#auto-complete)
+* [Máquina do tempo](#máquina-do-tempo)
+* [CtrlP ( Gerenciador de projetos )](#ctrlp--gerenciador-de-projetos-)
+* [Tabular](#tabular)
+* [Multiple cursors](#multiple-cursors)
+* [EasyMotion](#easymotion)
+* [NERDCommenter](#nerdcommenter)
+* [Surround](#surround)
+* [NERDTree](#nerdtree)
+* [Emmet ( html )](#emmet--html-)
+* [Ultisnips ( snippets )](#ultisnips--snippets-)
+* [Outros](#outros)
+* [Dúvidas](#dúvidas)
 
 ### Modos
 
@@ -313,7 +327,7 @@ http://beyondgrep.com/documentation/
 | ```10@a```                          | Roda 10 vezes a macro do registro a |
 | ```:reg a```                          | Ve o que esta gravado na macro |
 
-### Desfazendo e refazendo
+### Auto-complete
 
 | Comando                                                   | Descrição                            |
 | --------------------------------------------------------- | ------------------------------------ |
