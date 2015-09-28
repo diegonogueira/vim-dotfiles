@@ -153,7 +153,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```va}```                                           | Seleciona tudo entre {}, inclusive as {} |
 | ```vit```                                           | Seleciona o trecho com a tab. <tag>trecho</tag> |
 | ```o```                                           | Alterna entre o início da seleção e depois da seleção. Necessário ter um trecho selecionado |
-| ```var a = 1```<br>```var b = 2```<br>```var c = 3```<br>```<C-v>jj$```<br>```A;```<br>```<Ctrl-[>```                                           | Coloca ; no final de cada linha. |
+| ```var a = 1```<br>```var b = 2```<br>```var c = 3```<br>```<C-v>jj$```<br>```A;```<br>```<Ctrl-[>``` | Coloca ; no final de cada linha. |
 
 ### Buscando no arquivo
 
@@ -169,7 +169,6 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```:s/<b>/<e>```                                  | Muda tudo que achar de \<b> para <e> na linha |
 | ```:%s/<b>/<e>```                                 | Muda tudo que achar de \<b> para <e> no arquivo inteiro |
 | ```:1,10 s/<b>/<e>```                             | Muda tudo que achar de \<b> para <e> somente da linha 1 a 10 |
-
 
 ### Trabalhando com arquivos
 
@@ -191,7 +190,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```‘0```                          | Abre o último arquivo editado |
 | ```‘1```                          | Abre o penúltimo arquivo editadoo |
 
-### Trabalhando com arquivos
+### Janelas, buffers
 
 | Comando                                                   | Descrição                            |
 | --------------------------------------------------------- | ------------------------------------ |
@@ -210,3 +209,77 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```Ctrl-w--```                          | Diminui o espaço da janela atual |
 | ```:wall```                          | Salva todas as janelas |
 | ```:qall```                          | Fecha todas as janelas |
+
+### File explorer
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:Vex```                          | Abre o file explorer ao lado |
+| ```:Sex```                          | Lista os arquivos abertos |
+| ```:buffers```                          | Abre o file explorer a baixo |
+
+### Desfazendo e refazendo
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```u```                          | Desfaz |
+| ```U```                          | Desfaz mudanças na linha editada |
+| ```Ctrl-r```                          | Refaz |
+
+### Ordenando linhas
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:sort```                          | Ordena |
+| ```:sort u```                          | Ordena e remove linhas duplicadas |
+| ```:sort n```                          | Ordena numericamente |
+| ```:<b>,<e> sort```                          | Ordena da linha \<b> até <e> |
+
+### Vimgrep ( busca em todos os arquivos ) lento!
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:pwd```<br>```:vimgrep /TEXTO/ ./**/*.rb```<br>```cw``` | Abrindo arquivo ruby que contenham a palavra TEXTO |
+
+### Ack ( busca em todos os arquivos )
+
+Instalar o ack: brew install ack
+
+https://github.com/mileszs/ack.vim/blob/master/doc/ack.txt<br>
+http://beyondgrep.com/documentation/
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:pwd```<br>```:Ack --ignore-dir=log TEXTO``` | Busca o TEXTO nos arquivos da pasta atual, ignorando a pasta log. |
+| ```:pwd```<br>```:Ack --ruby TEXTO``` | Busca o TEXTO nos arquivos da pasta atual, porém somente arquivos ruby ( .rb .rhtml .rjs .rxml .erb .rake .spec; Rakefile; first line matches /^#!.*\bruby/ ) |
+
+### Find and replace all
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:pwd```<br>```:args `Ack --ruby -l TEXTO````<br>```:argdo %s/DE/PARA/gc | update```  | Localiza DE e altera para o PARA, nos arquivos da pasta atual. <br> não se esqueça do -l no Ack. <br > o c é para confirmação, se não quiser confirmar a cada registro encontrado. remova o c. |
+
+### Indentação
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```=```                          | Auto indentação no modo visual. ex: vip = |
+| ```==```                          | Auto indentação no modo normal |
+| ```=ip``` OU<br>```=ap```         | Auto indentação do paragrafo |
+| ```>```                          | Avança para frente o texto em modo visual |
+| ```<```                          | Recua em modo visual |
+| ```>>```                          | Avança para frente no modo normal |
+| ```<<```                          | Recua no modo normal |
+| ```>ap```                          | Avança o paragrafo atual |
+
+### Desfazendo e refazendo
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```u```                          | Desfaz |
+| ```u```                          | Desfaz |
+| ```u```                          | Desfaz |
+| ```u```                          | Desfaz |
+| ```u```                          | Desfaz |
+| ```u```                          | Desfaz |
+| ```u```                          | Desfaz |
