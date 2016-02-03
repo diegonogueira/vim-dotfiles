@@ -18,7 +18,9 @@ Plugin 'godlygeek/tabular'                " ...tabulate and alignment
 Plugin 'terryma/vim-multiple-cursors'     " ...Multiple Cursors
 Plugin 'mileszs/ack.vim'                  " ...Run your favorite search tool from Vim, with an enhanced results list.
 " Snippets
-Plugin 'SirVer/ultisnips'
+if v:version >= 704
+  Plugin 'SirVer/ultisnips'
+endif
 Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'                  " ...Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow:
 " Syntax

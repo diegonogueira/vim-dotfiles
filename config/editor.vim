@@ -57,6 +57,7 @@ filetype indent on
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
+autocmd BufWritePre * :%s/\s\+$//e
 
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
