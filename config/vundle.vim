@@ -1,4 +1,4 @@
-filetype off 
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -9,7 +9,7 @@ Plugin 'gmarik/Vundle.vim'                " ...unless we type a capital
 Plugin 'ctrlpvim/ctrlp.vim'               " ...fuzzy
 Plugin 'd11wtq/ctrlp_bdelete.vim'         " ...delete ctrlp buffer
 Plugin 'tpope/vim-surround'               " ...parentheses, brackets, quotes, XML tags, and more
-Plugin 'bling/vim-airline'                " ...status bar improvements
+Plugin 'vim-airline/vim-airline'          " ...status bar improvements
 Plugin 'Raimondi/delimitMate'             " ...auto-completion for quotes, parens, brackets, etc
 Plugin 'scrooloose/nerdtree'              " ...tree navigation
 Plugin 'scrooloose/nerdcommenter'         " ...commenter
