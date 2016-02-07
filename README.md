@@ -48,6 +48,7 @@ Adicionar em vundle.vim e rodar no terminal:
 * [NERDTree](#nerdtree)
 * [Emmet ( html )](#emmet--html-)
 * [Ultisnips ( snippets )](#ultisnips--snippets-)
+* [Debug ( performance )](#debug--performance-)
 * [Outros](#outros)
 * [Dúvidas](#dúvidas)
 
@@ -429,6 +430,18 @@ https://github.com/SirVer/ultisnips
 | ```class [TAB]```                          | Chama o snippet |
 | ```C-j```                          | Vai para a próxima inserção no snippet |
 | ```C-k```                          | Volta para a inserção anterior do snippet |
+
+### Debug ( performance )
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```:profile start profile.log```                          | Inicia um profile para debug         |
+| ```:profile func *```                                     | Informa que vai depurar todas as funções |
+| ```:profile file *```                                     | Informa que vai depurar todos os arquivos |
+| ```Faça ação que esta com uma performance ruim```         | ...                                  |
+| ```:profile pause```                                      | Pausa a depuração                    |
+| ```:noautocmd qall!```                                    | Vecha o vim                          |
+| ```cat profile.log```                                     | Visualiza o log                      |
 
 ### Outros
 
