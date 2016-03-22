@@ -32,7 +32,7 @@ Adicionar em vundle.vim e rodar no terminal:
 * [Desfazendo e refazendo](#desfazendo-e-refazendo)
 * [Ordenando linhas](#ordenando-linhas)
 * [Vimgrep ( busca em todos os arquivos ) lento!](#vimgrep--busca-em-todos-os-arquivos--lento)
-* [Ack + The Silver Searcher ( busca em todos os arquivos )](#ack-the-silver-searcher--busca-em-todos-os-arquivos-)
+* [Ack + The Silver Searcher ( busca em todos os arquivos )](#ack--the-silver-searcher--busca-em-todos-os-arquivos-)
 * [Find and replace all](#find-and-replace-all)
 * [Indentação](#indentação)
 * [Manipulando texto](#manipulando-texto)
