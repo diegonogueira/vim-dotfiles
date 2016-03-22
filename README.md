@@ -3,9 +3,9 @@
 sh -c "`curl -fsSL https://raw.github.com/diegonogueira/vim-dotfiles/master/install.sh`"
 ```
 
-Para usar o plugin ack, instalar:
+Para usar o plugin ack + the_silver_searcher, instalar:
 
-```brew install ack```
+```brew install the_silver_searcher```
 
 # Instalar plugin
 
@@ -32,7 +32,7 @@ Adicionar em vundle.vim e rodar no terminal:
 * [Desfazendo e refazendo](#desfazendo-e-refazendo)
 * [Ordenando linhas](#ordenando-linhas)
 * [Vimgrep ( busca em todos os arquivos ) lento!](#vimgrep--busca-em-todos-os-arquivos--lento)
-* [Ack ( busca em todos os arquivos )](#ack--busca-em-todos-os-arquivos-)
+* [Ack + The Silver Searcher ( busca em todos os arquivos )](#ack-the-silver-searcher--busca-em-todos-os-arquivos-)
 * [Find and replace all](#find-and-replace-all)
 * [Indentação](#indentação)
 * [Manipulando texto](#manipulando-texto)
@@ -275,9 +275,9 @@ Adicionar em vundle.vim e rodar no terminal:
 | --------------------------------------------------------- | ------------------------------------ |
 | ```:pwd```<br>```:vimgrep /TEXTO/ ./**/*.rb```<br>```cw``` | Abrindo arquivo ruby que contenham a palavra TEXTO |
 
-### Ack ( busca em todos os arquivos )
+### Ack + The Silver Searcher ( busca em todos os arquivos )
 
-Instalar o ack: brew install ack
+Instalar o The Silver Searcher: brew install the_silver_searcher
 
 https://github.com/mileszs/ack.vim/blob/master/doc/ack.txt<br>
 http://beyondgrep.com/documentation/
