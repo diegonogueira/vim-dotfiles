@@ -39,3 +39,4 @@ source ~/.vim.d/config/plugins/ctrlp_bdelete.vim
 source ~/.vim.d/config/plugins/easymotion.vim
 source ~/.vim.d/config/plugins/nerdtree.vim
 source ~/.vim.d/config/plugins/airline.vim
+source ~/.vim.d/config/plugins/ack.vim
