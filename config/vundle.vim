@@ -29,6 +29,7 @@ Plugin 'ekalinin/Dockerfile.vim'          " ...Docker file
 Plugin 'slim-template/vim-slim.git'       " ...vim slim
 " Themes
 Plugin 'jnurmine/Zenburn'                 " ...zenburn theme ( emacs ) :)
+Plugin 'rizzatti/dash.vim'                " ...Dash app
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,3 +41,4 @@ source ~/.vim.d/config/plugins/easymotion.vim
 source ~/.vim.d/config/plugins/nerdtree.vim
 source ~/.vim.d/config/plugins/airline.vim
 source ~/.vim.d/config/plugins/ack.vim
+source ~/.vim.d/config/plugins/dash.vim

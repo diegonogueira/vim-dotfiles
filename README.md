@@ -48,6 +48,7 @@ Adicionar em vundle.vim e rodar no terminal:
 * [NERDTree](#nerdtree)
 * [Emmet ( html )](#emmet--html-)
 * [Ultisnips ( snippets )](#ultisnips--snippets-)
+* [Dash ( documentação )](#dash--documentação-)
 * [Debug ( performance )](#debug--performance-)
 * [Outros](#outros)
 * [Dúvidas](#dúvidas)
@@ -430,6 +431,17 @@ https://github.com/SirVer/ultisnips
 | ```class [TAB]```                          | Chama o snippet |
 | ```C-j```                          | Vai para a próxima inserção no snippet |
 | ```C-k```                          | Volta para a inserção anterior do snippet |
+
+### Dash ( documentação )
+
+Busca na documentação baseando-se pelo tipo do arquivo.
+
+https://github.com/rizzatti/dash.vim
+
+| Comando                                                   | Descrição                            |
+| --------------------------------------------------------- | ------------------------------------ |
+| ```,d```                           | Busca no Dash a palavra selecionada. Não precisa selecionar, basta somente deixar o cursor em cima|
+| ```,D```                           | Busque no Dash algo baseado no tipo de arquivo em questão |
 
 ### Debug ( performance )
 
