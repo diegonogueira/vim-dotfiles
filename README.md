@@ -406,6 +406,7 @@ http://beyondgrep.com/documentation/
 | Comando                                                   | Descrição                            |
 | --------------------------------------------------------- | ------------------------------------ |
 | ```,n```                          | Alterna entre o NERDTree aberto e fechado |
+| ```,N```                          | Revela o arquivo no NERDTree |
 | ```o```                          | Abre a pasta |
 | ```<ENTER>```                          | Abre o arquivo |
 | ```j e k```                          | Navegando entre os arquivos |
