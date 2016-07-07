@@ -27,9 +27,11 @@ Plugin 'mattn/emmet-vim'                  " ...Emmet is a plugin for many popula
 Plugin 'elixir-lang/vim-elixir'           " ...Elixir files
 Plugin 'ekalinin/Dockerfile.vim'          " ...Docker file
 Plugin 'slim-template/vim-slim.git'       " ...vim slim
+Plugin 'mustache/vim-mustache-handlebars' " ...Mustache files
 " Themes
 Plugin 'jnurmine/Zenburn'                 " ...zenburn theme ( emacs ) :)
 Plugin 'rizzatti/dash.vim'                " ...Dash app
+Plugin 'NLKNguyen/papercolor-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
