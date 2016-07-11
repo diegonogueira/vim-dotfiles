@@ -50,10 +50,15 @@ endif
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
 set expandtab
+
+" by default, the indent is 2 spaces.
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+
+" for js/coffee/jade files, 4 spaces
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
 
 filetype plugin on
 filetype indent on
