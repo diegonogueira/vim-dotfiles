@@ -107,14 +107,21 @@ nnoremap <silent> <Esc><Esc> :let @/=""<CR> " Cancel highlighting
 
 " ================ Theme ============================
 
-set background=dark
 set guifont=*
 if has("gui_gtk2")
   set guifont=Monospace\ 11
 else
   set guifont=Monaco:h13
 end
+
+set background=dark
 colorscheme zenburn
+
+"set background=light
+"colorscheme PaperColor
+
+"set background=dark
+"colorscheme solarized
 
 " ============= copy and paste ======================
 
