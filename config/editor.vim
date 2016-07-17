@@ -136,3 +136,7 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+" ====== autocomplete ======
+
+inoremap <C-Space> <C-n>

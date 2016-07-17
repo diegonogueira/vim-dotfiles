@@ -333,7 +333,7 @@ http://beyondgrep.com/documentation/
 
 | Comando                                                   | Descrição                            |
 | --------------------------------------------------------- | ------------------------------------ |
-| ```<C-n>```                          | Vai para a próxima palavra encontarda |
+| ```<C-Space> OU <C-n>```             | Vai para a próxima palavra encontarda. Usar o <C-Space> para não conflitar com o multiple-cursors |
 | ```<C-p>```                          | Vai para a palavra anterior encontrada |
 | ```<C-y>```                          | Aceita a sugestão |
 | ```<C-e>```                          | Reverte para o ponto sem autocomplete |
