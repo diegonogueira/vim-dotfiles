@@ -25,7 +25,7 @@ endif
 Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'                  " ...Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow:
 " Syntax
-Plugin 'elixir-lang/vim-elixir'           " ...Elixir files
+Plugin 'diegonogueira/vim-elixir'         " ...Elixir files
 Plugin 'ekalinin/Dockerfile.vim'          " ...Docker file
 Plugin 'slim-template/vim-slim.git'       " ...vim slim
 Plugin 'mustache/vim-mustache-handlebars' " ...Mustache files
