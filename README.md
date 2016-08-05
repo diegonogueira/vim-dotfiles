@@ -187,6 +187,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```vi}```                                           | Seleciona o conteúdo entre {} |
 | ```va}```                                           | Seleciona tudo entre {}, inclusive as {} |
 | ```vit```                                           | Seleciona o trecho com a tab. <tag>trecho</tag> |
+| ```vii```                                           | Seleciona a identação atual |
 | ```o```                                           | Alterna entre o início da seleção e depois da seleção. Necessário ter um trecho selecionado |
 | ```var a = 1```<br>```var b = 2```<br>```var c = 3```<br>```<C-v>jj$```<br>```A;```<br>```<Ctrl-[>``` | Coloca ; no final de cada linha. |
 
