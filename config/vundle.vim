@@ -18,6 +18,7 @@ Plugin 'godlygeek/tabular'                " ...tabulate and alignment
 Plugin 'terryma/vim-multiple-cursors'     " ...Multiple Cursors
 Plugin 'mileszs/ack.vim'                  " ...Run your favorite search tool from Vim, with an enhanced results list.
 Plugin 'rizzatti/dash.vim'                " ...Dash app
+Plugin 'tpope/vim-fugitive'               " ...Git
 " Snippets
 if v:version >= 704
   Plugin 'SirVer/ultisnips'
@@ -25,7 +26,7 @@ endif
 Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'                  " ...Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow:
 " Syntax
-Plugin 'diegonogueira/vim-elixir'         " ...Elixir files
+Plugin 'elixir-lang/vim-elixir'           " ...Elixir files
 Plugin 'ekalinin/Dockerfile.vim'          " ...Docker file
 Plugin 'slim-template/vim-slim.git'       " ...vim slim
 Plugin 'mustache/vim-mustache-handlebars' " ...Mustache files
@@ -45,3 +46,4 @@ source ~/.vim.d/config/plugins/nerdtree.vim
 source ~/.vim.d/config/plugins/airline.vim
 source ~/.vim.d/config/plugins/ack.vim
 source ~/.vim.d/config/plugins/dash.vim
+source ~/.vim.d/config/plugins/select_indent.vim
