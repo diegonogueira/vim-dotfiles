@@ -77,6 +77,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```E```                                   | Move o cursor para o final da próxima palavra, desconsiderando hífen  |
 | ```b```                                                         | Move o cursor para o início da palavra anterior |
 | ```ge```                                                         | Vai para o final da palavra anterior |
+| ```;```                                                         | Vai para a próxima palavra Camelcase |
 | ```gg```                                                         | Vai para o início do arquivo |
 | ```G```                                                         | Vai para o final do arquivo |
 | ```0```                                                         | Vai para o início da linha |
@@ -142,6 +143,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```da”```                                                   | Deleta conteúdo entre aspas |
 | ```<n>+Exclusão```<br>```Ex: 5x```<br>```Ex: 5dd``` | Apaga a quantidade de <n> informado ao comando <br> Apaga os próximos 5 caracteres <br> Apaga as próximas 5 linhas |
 | ```ciw```                               | Remove a palavra, e troca para modo de inserção |
+| ```ci;```                               | Remove a palavra Camelcase, e troca para modo de inserção |
 | ```:g/TEXTO/d```                                            | Deleta a palavra Texto no arquivo |
 | ```J```                                            | Junta a linha de baixo com a atual |
 
@@ -188,6 +190,7 @@ Adicionar em vundle.vim e rodar no terminal:
 | ```va}```                                           | Seleciona tudo entre {}, inclusive as {} |
 | ```vit```                                           | Seleciona o trecho com a tab. <tag>trecho</tag> |
 | ```vii```                                           | Seleciona a identação atual |
+| ```vi;```                                           | Seleciona a palavra Camelcase |
 | ```o```                                           | Alterna entre o início da seleção e depois da seleção. Necessário ter um trecho selecionado |
 | ```var a = 1```<br>```var b = 2```<br>```var c = 3```<br>```<C-v>jj$```<br>```A;```<br>```<Ctrl-[>``` | Coloca ; no final de cada linha. |
 
