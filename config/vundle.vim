@@ -20,6 +20,7 @@ Plugin 'mileszs/ack.vim'                  " ...Run your favorite search tool fro
 Plugin 'rizzatti/dash.vim'                " ...Dash app
 Plugin 'tpope/vim-fugitive'               " ...Git
 Plugin 'michaeljsmith/vim-indent-object'  " ...Indent selection
+Plugin 'chaoren/vim-wordmotion'           " ...Camel case motion
 " Snippets
 if v:version >= 704
   Plugin 'SirVer/ultisnips'
@@ -47,3 +48,4 @@ source ~/.vim.d/config/plugins/nerdtree.vim
 source ~/.vim.d/config/plugins/airline.vim
 source ~/.vim.d/config/plugins/ack.vim
 source ~/.vim.d/config/plugins/dash.vim
+source ~/.vim.d/config/plugins/vim_wordmotion.vim
