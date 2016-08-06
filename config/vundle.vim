@@ -19,6 +19,7 @@ Plugin 'terryma/vim-multiple-cursors'     " ...Multiple Cursors
 Plugin 'mileszs/ack.vim'                  " ...Run your favorite search tool from Vim, with an enhanced results list.
 Plugin 'rizzatti/dash.vim'                " ...Dash app
 Plugin 'tpope/vim-fugitive'               " ...Git
+Plugin 'michaeljsmith/vim-indent-object'  " ...Indent selection
 " Snippets
 if v:version >= 704
   Plugin 'SirVer/ultisnips'
@@ -46,4 +47,3 @@ source ~/.vim.d/config/plugins/nerdtree.vim
 source ~/.vim.d/config/plugins/airline.vim
 source ~/.vim.d/config/plugins/ack.vim
 source ~/.vim.d/config/plugins/dash.vim
-source ~/.vim.d/config/plugins/select_indent.vim
