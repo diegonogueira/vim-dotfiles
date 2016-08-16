@@ -49,3 +49,4 @@ source ~/.vim.d/config/plugins/airline.vim
 source ~/.vim.d/config/plugins/ack.vim
 source ~/.vim.d/config/plugins/dash.vim
 source ~/.vim.d/config/plugins/vim_wordmotion.vim
+source ~/.vim.d/config/plugins/ultisnips.vim
