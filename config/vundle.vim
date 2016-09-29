@@ -32,6 +32,7 @@ Plugin 'elixir-lang/vim-elixir'           " ...Elixir files
 Plugin 'ekalinin/Dockerfile.vim'          " ...Docker file
 Plugin 'slim-template/vim-slim.git'       " ...vim slim
 Plugin 'mustache/vim-mustache-handlebars' " ...Mustache files
+Plugin 'lambdatoast/elm.vim'              " ...Elm-lang
 " Themes
 "Plugin 'diegonogueira/Zenburn'            " ...zenburn theme ( emacs ) :)
 "Plugin 'NLKNguyen/papercolor-theme'       " ...
