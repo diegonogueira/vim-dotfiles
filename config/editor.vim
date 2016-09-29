@@ -118,8 +118,9 @@ else
   set guifont=Monaco:h13
 end
 
-set background=dark
-colorscheme zenburn
+"set background=dark
+"colorscheme zenburn
+colorscheme nova
 
 "set background=light
 "colorscheme PaperColor

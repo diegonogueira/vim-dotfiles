@@ -33,9 +33,10 @@ Plugin 'ekalinin/Dockerfile.vim'          " ...Docker file
 Plugin 'slim-template/vim-slim.git'       " ...vim slim
 Plugin 'mustache/vim-mustache-handlebars' " ...Mustache files
 " Themes
-Plugin 'diegonogueira/Zenburn'            " ...zenburn theme ( emacs ) :)
-Plugin 'NLKNguyen/papercolor-theme'       "
-Plugin 'altercation/vim-colors-solarized' " ...solorized theme
+"Plugin 'diegonogueira/Zenburn'            " ...zenburn theme ( emacs ) :)
+"Plugin 'NLKNguyen/papercolor-theme'       " ...
+"Plugin 'altercation/vim-colors-solarized' " ...solorized theme
+Plugin 'trevordmiller/nova-vim'           " ...nova them
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
