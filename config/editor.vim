@@ -60,7 +60,7 @@ set tabstop=2
 set softtabstop=2
 
 " for js/coffee/jade files, 4 spaces
-autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
+"autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
 
 " XML
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
