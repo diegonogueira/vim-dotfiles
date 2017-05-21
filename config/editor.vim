@@ -30,7 +30,7 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 " That means all \x commands turn into ,x
 " The mapleader has to be set before vundle starts loading all
 " the plugins.
-let mapleader=","
+let mapleader="\<Space>"
 
 " ================ Turn Off Swap Files ==============
 
@@ -58,6 +58,7 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+set linespace=2
 
 " for js/coffee/jade files, 4 spaces
 "autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
@@ -115,18 +116,15 @@ set guifont=*
 if has("gui_gtk2")
   set guifont=Monospace\ 11
 else
-  set guifont=Monaco:h13
+  set guifont=Monaco:h15
 end
 
 "set background=dark
 "colorscheme zenburn
-colorscheme nova
+"colorscheme nova
 
-"set background=light
-"colorscheme PaperColor
-
-"set background=dark
-"colorscheme solarized
+set background=light
+colorscheme solarized
 
 " ============= copy and paste ======================
 
@@ -144,4 +142,13 @@ noremap <Right> <Nop>
 
 " ====== autocomplete ======
 
-inoremap <C-Space> <C-n>
+"inoremap <C-Space> <C-n>
+
+" ====== Maps =======
+
+nnoremap <space>fs :w<CR>
+nnoremap <space>fc :q<CR>
+nnoremap <space>fC :qall<CR>
+nnoremap <space>fa :saveas<CR>
+nnoremap <space>fr :edit!<CR>
+nnoremap <space><Tab> :b#<cr>

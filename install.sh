@@ -19,8 +19,9 @@ ln -sf ~/.vim.d/vimrc.vim ~/.vimrc
 mkdir ~/.vim
 
 # clone vundle plugin
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-vim +PluginInstall +qall
+vim +PlugInstall +qall
 
 echo 'Instaled!'
