@@ -61,7 +61,7 @@ set softtabstop=2
 set linespace=2
 
 " for js/coffee/jade files, 4 spaces
-"autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
 
 " XML
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
@@ -140,15 +140,11 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" ====== autocomplete ======
-
-"inoremap <C-Space> <C-n>
-
 " ====== Maps =======
 
 nnoremap <space>fs :w<CR>
-nnoremap <space>fc :q<CR>
-nnoremap <space>fC :qall<CR>
-nnoremap <space>fa :saveas<CR>
+nnoremap <space>fq :q<CR>
+nnoremap <space>fQ :qall<CR>
+nnoremap <space>fa :saveas<space>
 nnoremap <space>fr :edit!<CR>
 nnoremap <space><Tab> :b#<cr>

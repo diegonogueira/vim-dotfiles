@@ -28,6 +28,7 @@ Plug 'diegonogueira/Zenburn'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'altercation/vim-colors-solarized'
 Plug 'trevordmiller/nova-vim'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
@@ -112,3 +113,8 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 call altr#define('web/%/%.ex', 'test/%/%_test.exs', 'lib/%/%.ex')
 nmap <space>tt  <Plug>(altr-forward)
+
+" === Multiple cursors ===
+
+nnoremap <silent> <C-a> :MultipleCursorsFind <C-R>/<CR>
+vnoremap <silent> <C-a> :MultipleCursorsFind <C-R>/<CR>

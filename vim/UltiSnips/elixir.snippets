@@ -1,5 +1,17 @@
 snippet log
 IO.puts "==================="
-IO.inspect $0
+IO.inspect ${0:${VISUAL}}
 IO.puts "==================="
+endsnippet
+
+snippet ins
+IO.inspect ${0:${VISUAL}}
+endsnippet
+
+snippet %
+%{${1:}: $1, $0}
+endsnippet
+
+snippet ,,
+${1:}: $1, $0
 endsnippet
