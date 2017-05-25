@@ -142,9 +142,9 @@ noremap <Right> <Nop>
 
 " ====== Maps =======
 
-nnoremap <space>fs :w<CR>
-nnoremap <space>fq :q<CR>
-nnoremap <space>fQ :qall<CR>
-nnoremap <space>fa :saveas<space>
-nnoremap <space>fr :edit!<CR>
+nnoremap <space>w :w<CR>
+nnoremap <space>q :q<CR>
+nnoremap <space>Q :qall<CR>
+nnoremap <space>a :saveas<space>
+nnoremap <space>r :edit!<CR>
 nnoremap <space><Tab> :b#<cr>
