@@ -130,6 +130,7 @@ vnoremap <silent> <C-a> :MultipleCursorsFind <C-R>/<CR>
 " === Gitgutter ===
 
 set updatetime=250
+let g:gitgutter_sign_column_always = 1
 
 " === Vim bookmark ===
 
