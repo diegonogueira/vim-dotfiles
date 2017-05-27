@@ -18,8 +18,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 Plug 'janko-m/vim-test'
-"Plug 'elixir-lang/vim-elixir'
-Plug 'gasparch/vim-elixir', {'branch': 'cache_searches'}
+Plug 'elixir-lang/vim-elixir'
 Plug 'kana/vim-altr'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'slim-template/vim-slim'
@@ -130,7 +129,7 @@ vnoremap <silent> <C-a> :MultipleCursorsFind <C-R>/<CR>
 " === Gitgutter ===
 
 set updatetime=250
-let g:gitgutter_sign_column_always = 1
+"let g:gitgutter_sign_column_always = 1
 
 " === Vim bookmark ===
 
