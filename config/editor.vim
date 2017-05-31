@@ -2,6 +2,7 @@ set runtimepath+=~/.vim.d/vim/
 
 set nonumber                    "Line numbers are good
 set relativenumber              "Relative numbers ( navigation )
+set cursorline                  "Highlight horizontal line
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
@@ -121,11 +122,11 @@ else
 end
 
 "set background=dark
-"colorscheme zenburn
+colorscheme zenburn
 "colorscheme nova
 
-set background=light
-colorscheme solarized
+"set background=light
+"colorscheme solarized
 
 " ============= copy and paste ======================
 
