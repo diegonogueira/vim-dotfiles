@@ -31,6 +31,7 @@ Plug 'trevordmiller/nova-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'MattesGroeger/vim-bookmarks'
+Plug 'takac/vim-hardtime'
 
 call plug#end()
 
@@ -143,3 +144,7 @@ nmap <space>mx <Plug>BookmarkClearAll
 nmap <space>mkk <Plug>BookmarkMoveUp
 nmap <space>mjj <Plug>BookmarkMoveDown
 nmap <space>mg <Plug>BookmarkMoveToLine
+
+" === Vim hardtime ===
+
+let g:hardtime_default_on = 1
