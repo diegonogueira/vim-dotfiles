@@ -66,7 +66,7 @@ set linespace=2
 autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
 
 " XML
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+" au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 filetype plugin on
 filetype indent on
@@ -121,12 +121,12 @@ else
   set guifont=Monaco:h15
 end
 
-"set background=dark
-colorscheme zenburn
-"colorscheme nova
-
+set background=dark
 "set background=light
-"colorscheme solarized
+
+colorscheme zenburn
+" colorscheme nova
+" colorscheme solarized
 
 " ============= copy and paste ======================
 

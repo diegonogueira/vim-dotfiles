@@ -25,9 +25,9 @@ Plug 'slim-template/vim-slim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'w0rp/ale'
 Plug 'diegonogueira/Zenburn'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'altercation/vim-colors-solarized'
-Plug 'trevordmiller/nova-vim'
+" Plug 'NLKNguyen/papercolor-theme'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'trevordmiller/nova-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'MattesGroeger/vim-bookmarks'
@@ -56,7 +56,7 @@ set laststatus=2
 " === EasyMotion ===
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
-nmap <space>s <Plug>(easymotion-s2)
+nmap [ <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
@@ -148,3 +148,7 @@ nmap <space>mg <Plug>BookmarkMoveToLine
 " === Vim hardtime ===
 
 let g:hardtime_default_on = 1
+
+" === Nerd commenter ===
+
+let g:NERDSpaceDelims = 1
