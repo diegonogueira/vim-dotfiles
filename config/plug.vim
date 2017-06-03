@@ -37,12 +37,12 @@ call plug#end()
 
 " === NerdThree ===
 
-map <space>n :NERDTreeToggle<CR>
-nmap <space>N :NERDTreeFind<CR>
+map <leader>n :NERDTreeToggle<CR>
+nmap <leader>N :NERDTreeFind<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * wincmd l " move to left window
-"nmap <space>r :NERDTreeFocus<cr>R<c-w><c-p>
+"nmap <leader>r :NERDTreeFocus<cr>R<c-w><c-p>
 
 " === Airline ===
 
@@ -50,13 +50,13 @@ set laststatus=2
 
 " === Dash ===
 
-:nnoremap <silent> <space>dd :Dash<CR>
-:nnoremap <space>df :Dash<Space>
+:nnoremap <silent> <leader>dd :Dash<CR>
+:nnoremap <leader>df :Dash<leader>
 
 " === EasyMotion ===
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
-nmap [ <Plug>(easymotion-s2)
+nmap <leader><leader> <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
@@ -64,27 +64,28 @@ omap / <Plug>(easymotion-tn)
 " === Vim-test ===
 
 "line
-nmap <silent> <space>tl :TestNearest<CR>
+nmap <silent> <leader>tl :TestNearest<CR>
 "buffer
-nmap <silent> <space>tb :TestFile<CR>
+nmap <silent> <leader>tb :TestFile<CR>
 "all
-nmap <silent> <space>ta :TestSuite<CR>
+nmap <silent> <leader>ta :TestSuite<CR>
 "last
-nmap <silent> <space>tL :TestLast<CR>
+nmap <silent> <leader>tL :TestLast<CR>
 "visit
-nmap <silent> <space>tv :TestVisit<CR>
+nmap <silent> <leader>tv :TestVisit<CR>
 let test#filename_modifier = ":~"
 
 " === Vim wordmotion ===
 
-let g:wordmotion_mappings = {
-  \ 'w' : ';',
-  \ 'b' : '<M-b>',
-  \ 'e' : '<M-e>',
-  \ 'ge' : 'g<M-e>',
-  \ 'aw' : 'a;',
-  \ 'iw' : 'i;'
-  \ }
+" let g:wordmotion_mappings = {
+  " \ 'w' : ';',
+  " \ 'b' : '<M-b>',
+  " \ 'e' : '<M-e>',
+  " \ 'ge' : 'g<M-e>',
+  " \ 'aw' : 'a;',
+  " \ 'iw' : 'i;'
+  " \ }
+let g:wordmotion_prefix = '<leader>'
 
 " === Ack ===
 
@@ -92,14 +93,15 @@ let g:ackprg = 'ag --vimgrep --ignore-dir=public/uploads --ignore-dir=tmp --igno
 
 " === CtrlP ===
 
+nnoremap <leader>p <Nop>
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_map = '\<space>p'
+let g:ctrlp_map = '\<leader>pf'
 
 set wildcharm=<Tab>
-nnoremap <space>p :CtrlP ~<Tab>
-nnoremap <space>f :CtrlP<cr>
-nnoremap <space>b :CtrlPBuffer<cr>
-nnoremap <space>C :CtrlPClearCache<cr>
+nnoremap <leader>pp :CtrlP ~<Tab>
+nnoremap <leader>pf :CtrlP<cr>
+nnoremap <leader>pb :CtrlPBuffer<cr>
+nnoremap <leader>pc :CtrlPClearCache<cr>
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
@@ -120,7 +122,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " === Altr ===
 
 call altr#define('web/%/%.ex', 'test/%/%_test.exs', 'lib/%/%.ex')
-nmap <space>tt  <Plug>(altr-forward)
+nmap <leader>tt  <Plug>(altr-forward)
 
 " === Multiple cursors ===
 
@@ -134,16 +136,16 @@ set updatetime=250
 
 " === Vim bookmark ===
 
-nmap <space>mm <Plug>BookmarkToggle
-nmap <space>mi <Plug>BookmarkAnnotate
-nmap <space>ma <Plug>BookmarkShowAll
-nmap <space>mj <Plug>BookmarkNext
-nmap <space>mk <Plug>BookmarkPrev
-nmap <space>mc <Plug>BookmarkClear
-nmap <space>mx <Plug>BookmarkClearAll
-nmap <space>mkk <Plug>BookmarkMoveUp
-nmap <space>mjj <Plug>BookmarkMoveDown
-nmap <space>mg <Plug>BookmarkMoveToLine
+nmap <leader>mm <Plug>BookmarkToggle
+nmap <leader>mi <Plug>BookmarkAnnotate
+nmap <leader>ma <Plug>BookmarkShowAll
+nmap <leader>mj <Plug>BookmarkNext
+nmap <leader>mk <Plug>BookmarkPrev
+nmap <leader>mc <Plug>BookmarkClear
+nmap <leader>mx <Plug>BookmarkClearAll
+nmap <leader>mkk <Plug>BookmarkMoveUp
+nmap <leader>mjj <Plug>BookmarkMoveDown
+nmap <leader>mg <Plug>BookmarkMoveToLine
 
 " === Vim hardtime ===
 

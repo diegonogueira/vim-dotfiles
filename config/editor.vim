@@ -32,7 +32,9 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 " That means all \x commands turn into ,x
 " The mapleader has to be set before vundle starts loading all
 " the plugins.
-let mapleader="\<Space>"
+nnoremap <space> <Nop>
+" let mapleader="\<space>"
+map <space> <leader>
 
 " ================ Turn Off Swap Files ==============
 
@@ -134,6 +136,7 @@ vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
+noremap Y y$
 
 " ====== force do use h,j,k,l navigation keys =======
 
@@ -142,11 +145,13 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" ====== Maps =======
+" ====== Files =======
 
-nnoremap <space>w :w<CR>
-nnoremap <space>q :q<CR>
-nnoremap <space>Q :qall<CR>
-nnoremap <space>a :saveas<space>
-nnoremap <space>r :edit!<CR>
-nnoremap <space><Tab> :b#<cr>
+nnoremap <leader>fs :w<CR>
+nnoremap <leader>fq :q<CR>
+nnoremap <leader>fQ :qall<CR>
+nnoremap <leader>fa :saveas<leader>
+nnoremap <leader>fr :edit!<CR>
+nnoremap <leader><Tab> :b#<cr>
+nnoremap <leader>fr :%s//g<left><left>
+vmap <leader>fr :%s//g<left><left>
