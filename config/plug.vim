@@ -77,15 +77,14 @@ let test#filename_modifier = ":~"
 
 " === Vim wordmotion ===
 
-" let g:wordmotion_mappings = {
-  " \ 'w' : ';',
-  " \ 'b' : '<M-b>',
-  " \ 'e' : '<M-e>',
-  " \ 'ge' : 'g<M-e>',
-  " \ 'aw' : 'a;',
-  " \ 'iw' : 'i;'
-  " \ }
-let g:wordmotion_prefix = '<leader>'
+let g:wordmotion_mappings = {
+  \ 'w' : '<leader>w',
+  \ 'b' : '<leader>b',
+  \ 'e' : '<leader>e',
+  \ 'ge' : '<leader>ge',
+  \ 'aw' : 'a<space>w',
+  \ 'iw' : 'i<space>w'
+  \ }
 
 " === Ack ===
 
