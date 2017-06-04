@@ -56,8 +56,8 @@ set laststatus=2
 " === EasyMotion ===
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
-nmap <leader><leader> <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
+map <leader>s <Plug>(easymotion-s2)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
@@ -70,7 +70,7 @@ nmap <silent> <leader>tb :TestFile<CR>
 "all
 nmap <silent> <leader>ta :TestSuite<CR>
 "last
-nmap <silent> <leader>tL :TestLast<CR>
+nmap <silent> <leader>t. :TestLast<CR>
 "visit
 nmap <silent> <leader>tv :TestVisit<CR>
 let test#filename_modifier = ":~"

@@ -155,3 +155,9 @@ nnoremap <leader>fr :edit!<CR>
 nnoremap <leader><Tab> :b#<cr>
 nnoremap <leader>fr :%s//g<left><left>
 vmap <leader>fr :%s//g<left><left>
+
+" Move lines around easily
+nnoremap <leader>k :m-2<cr>==
+nnoremap <leader>j :m+<cr>==
+xnoremap <leader>k :m-2<cr>gv=gv
+xnoremap <leader>j :m'>+<cr>gv=gv
