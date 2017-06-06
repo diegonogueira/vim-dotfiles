@@ -12,6 +12,7 @@ set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set guioptions-=T               "Remove toobar
 set guioptions-=m               "Remove menu
+set timeoutlen=2000
 
 " Disable new line on end file
 set binary

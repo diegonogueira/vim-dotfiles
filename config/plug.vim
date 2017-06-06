@@ -74,6 +74,8 @@ nmap <silent> <leader>t. :TestLast<CR>
 "visit
 nmap <silent> <leader>tv :TestVisit<CR>
 let test#filename_modifier = ":~"
+" let test#strategy = "basic"
+let test#strategy = "iterm"
 
 " === Vim wordmotion ===
 
@@ -148,7 +150,8 @@ nmap <leader>mg <Plug>BookmarkMoveToLine
 
 " === Vim hardtime ===
 
-let g:hardtime_default_on = 1
+" let g:hardtime_default_on = 1
+" let g:hardtime_allow_different_key = 1
 
 " === Nerd commenter ===
 
