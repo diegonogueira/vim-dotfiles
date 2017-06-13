@@ -151,7 +151,7 @@ noremap <Right> <Nop>
 nnoremap <leader>fs :w<CR>
 nnoremap <leader>fq :q<CR>
 nnoremap <leader>fQ :qall<CR>
-nnoremap <leader>fa :saveas<leader>
+nnoremap <leader>fa :saveas %<Tab>
 nnoremap <leader>fr :edit!<CR>
 nnoremap <leader><Tab> :b#<cr>
 nnoremap <leader>fr :%s//g<left><left>
