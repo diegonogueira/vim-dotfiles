@@ -57,7 +57,10 @@ set laststatus=2
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 let g:EasyMotion_smartcase = 1
-map <leader>s <Plug>(easymotion-s2)
+map <leader>; <Plug>(easymotion-s2)
+" Move to word
+map  <Leader>[ <Plug>(easymotion-bd-w)
+nmap <Leader>[ <Plug>(easymotion-overwin-w)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
