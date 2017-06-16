@@ -57,10 +57,10 @@ set laststatus=2
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 let g:EasyMotion_smartcase = 1
-map <leader>; <Plug>(easymotion-s2)
+map <leader>s <Plug>(easymotion-s2)
 " Move to word
-map  <Leader>[ <Plug>(easymotion-bd-w)
-nmap <Leader>[ <Plug>(easymotion-overwin-w)
+map  <Leader>x <Plug>(easymotion-bd-w)
+nmap <Leader>x <Plug>(easymotion-overwin-w)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
@@ -99,13 +99,13 @@ let g:ackprg = 'ag --vimgrep --ignore-dir=public/uploads --ignore-dir=tmp --igno
 
 nnoremap <leader>p <Nop>
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_map = '\<leader>pf'
+let g:ctrlp_map = '\<leader>;f'
 
 set wildcharm=<Tab>
-nnoremap <leader>pp :CtrlP ~<Tab>
-nnoremap <leader>pf :CtrlP<cr>
-nnoremap <leader>pb :CtrlPBuffer<cr>
-nnoremap <leader>pc :CtrlPClearCache<cr>
+nnoremap <leader>;p :CtrlP ~<Tab>
+nnoremap <leader>;f :CtrlP<cr>
+nnoremap <leader>;b :CtrlPBuffer<cr>
+nnoremap <leader>;c :CtrlPClearCache<cr>
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
