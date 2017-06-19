@@ -83,12 +83,12 @@ let test#strategy = "iterm"
 " === Vim wordmotion ===
 
 let g:wordmotion_mappings = {
-  \ 'w' : '<leader>w',
-  \ 'b' : '<leader>b',
-  \ 'e' : '<leader>e',
-  \ 'ge' : '<leader>ge',
-  \ 'aw' : 'a<space>w',
-  \ 'iw' : 'i<space>w'
+  \ 'w' : '<leader>l',
+  \ 'b' : '<space>h',
+  \ 'e' : '<leader>j',
+  \ 'ge' : '<leader>k',
+  \ 'aw' : '<space>l',
+  \ 'iw' : 'i<space>l'
   \ }
 
 " === Ack ===
@@ -99,13 +99,13 @@ let g:ackprg = 'ag --vimgrep --ignore-dir=public/uploads --ignore-dir=tmp --igno
 
 nnoremap <leader>p <Nop>
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_map = '\<leader>;f'
+"let g:ctrlp_map = '\<leader>f'
 
 set wildcharm=<Tab>
-nnoremap <leader>;p :CtrlP ~<Tab>
-nnoremap <leader>;f :CtrlP<cr>
-nnoremap <leader>;b :CtrlPBuffer<cr>
-nnoremap <leader>;c :CtrlPClearCache<cr>
+nnoremap <leader>p :CtrlP ~<Tab>
+nnoremap <leader>f :CtrlP<cr>
+nnoremap <leader>b :CtrlPBuffer<cr>
+nnoremap <leader>C :CtrlPClearCache<cr>
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 

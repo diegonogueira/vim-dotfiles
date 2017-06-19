@@ -148,17 +148,17 @@ noremap <Right> <Nop>
 
 " ====== Files =======
 
-nnoremap <leader>fs :w<CR>
-nnoremap <leader>fq :q<CR>
-nnoremap <leader>fQ :qall<CR>
-nnoremap <leader>fa :saveas %<Tab>
-nnoremap <leader>fr :edit!<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>Q :qall<CR>
+nnoremap <leader>a :saveas %<Tab>
+nnoremap <leader>R :edit!<CR>
 nnoremap <leader><Tab> :b#<cr>
-nnoremap <leader>fr :%s//g<left><left>
-vmap <leader>fr :%s//g<left><left>
+" nnoremap <leader>fr :%s//g<left><left>
+" vmap <leader>fr :%s//g<left><left>
 
 " Move lines around easily
-nnoremap <leader>k :m-2<cr>==
-nnoremap <leader>j :m+<cr>==
-xnoremap <leader>k :m-2<cr>gv=gv
-xnoremap <leader>j :m'>+<cr>gv=gv
+" nnoremap <leader>k :m-2<cr>==
+" nnoremap <leader>j :m+<cr>==
+" xnoremap <leader>k :m-2<cr>gv=gv
+" xnoremap <leader>j :m'>+<cr>gv=gv
