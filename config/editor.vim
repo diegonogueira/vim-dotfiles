@@ -33,8 +33,9 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 " That means all \x commands turn into ,x
 " The mapleader has to be set before vundle starts loading all
 " the plugins.
+" let mapleader=","
+" let maplocalleader=","
 nnoremap <space> <Nop>
-" let mapleader="\<space>"
 map <space> <leader>
 
 " ================ Turn Off Swap Files ==============
@@ -123,13 +124,6 @@ if has("gui_gtk2")
 else
   set guifont=Monaco:h15
 end
-
-set background=dark
-"set background=light
-
-colorscheme zenburn
-" colorscheme nova
-" colorscheme solarized
 
 " ============= copy and paste ======================
 

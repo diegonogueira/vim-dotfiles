@@ -18,7 +18,6 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 Plug 'janko-m/vim-test'
-" Plug 'elixir-lang/vim-elixir'
 Plug 'elixir-lang/vim-elixir', { 'branch': 'indent-performance' }
 Plug 'kana/vim-altr'
 Plug 'ekalinin/Dockerfile.vim'
@@ -31,10 +30,17 @@ Plug 'diegonogueira/Zenburn'
 " Plug 'trevordmiller/nova-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
-Plug 'MattesGroeger/vim-bookmarks'
-Plug 'takac/vim-hardtime'
 
 call plug#end()
+
+" === Theme ===
+
+set background=dark
+"set background=light
+
+colorscheme zenburn
+" colorscheme nova
+" colorscheme solarized
 
 " === NerdThree ===
 
@@ -67,15 +73,10 @@ omap / <Plug>(easymotion-tn)
 
 " === Vim-test ===
 
-"line
 nmap <silent> <leader>tl :TestNearest<CR>
-"buffer
 nmap <silent> <leader>tb :TestFile<CR>
-"all
 nmap <silent> <leader>ta :TestSuite<CR>
-"last
 nmap <silent> <leader>t. :TestLast<CR>
-"visit
 nmap <silent> <leader>tv :TestVisit<CR>
 let test#filename_modifier = ":~"
 " let test#strategy = "basic"
@@ -85,10 +86,10 @@ let test#strategy = "iterm"
 
 let g:wordmotion_mappings = {
   \ 'w' : '<leader>l',
-  \ 'b' : '<space>h',
+  \ 'b' : '<leader>h',
   \ 'e' : '<leader>j',
   \ 'ge' : '<leader>k',
-  \ 'aw' : '<space>l',
+  \ 'aw' : '<leader>l',
   \ 'iw' : 'i<space>l'
   \ }
 
@@ -98,21 +99,21 @@ let g:ackprg = 'ag --vimgrep --ignore-dir=public/uploads --ignore-dir=tmp --igno
 
 " === CtrlP ===
 
-nnoremap <leader>p <Nop>
+" nnoremap <leader>p <Nop>
 let g:ctrlp_working_path_mode = 'ra'
-"let g:ctrlp_map = '\<leader>f'
-
-set wildcharm=<Tab>
-nnoremap <leader>p :CtrlP ~<Tab>
-nnoremap <leader>f :CtrlP<cr>
-nnoremap <leader>b :CtrlPBuffer<cr>
-nnoremap <leader>C :CtrlPClearCache<cr>
+let g:ctrlp_mruf_relative = 1
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 let g:ctrlp_prompt_mappings = {
   \ 'PrtDeleteEnt()': ['<c-@>']
   \ }
+
+set wildcharm=<Tab>
+nnoremap <leader>p :CtrlP ~<Tab>
+nnoremap <leader>f :CtrlP<cr>
+nnoremap <leader>b :CtrlPBuffer<cr>
+nnoremap <leader>C :CtrlPClearCache<cr>
 
 " === ALE ===
 
@@ -127,7 +128,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " === Altr ===
 
 call altr#define('web/%/%.ex', 'test/%/%_test.exs', 'lib/%/%.ex')
-nmap <leader>tt  <Plug>(altr-forward)
+nmap <leader>tt <Plug>(altr-forward)
 
 " === Multiple cursors ===
 
@@ -137,25 +138,7 @@ vnoremap <silent> <C-a> :MultipleCursorsFind <C-R>/<CR>
 " === Gitgutter ===
 
 set updatetime=250
-"let g:gitgutter_sign_column_always = 1
-
-" === Vim bookmark ===
-
-nmap <leader>mm <Plug>BookmarkToggle
-nmap <leader>mi <Plug>BookmarkAnnotate
-nmap <leader>ma <Plug>BookmarkShowAll
-nmap <leader>mj <Plug>BookmarkNext
-nmap <leader>mk <Plug>BookmarkPrev
-nmap <leader>mc <Plug>BookmarkClear
-nmap <leader>mx <Plug>BookmarkClearAll
-nmap <leader>mkk <Plug>BookmarkMoveUp
-nmap <leader>mjj <Plug>BookmarkMoveDown
-nmap <leader>mg <Plug>BookmarkMoveToLine
-
-" === Vim hardtime ===
-
-" let g:hardtime_default_on = 1
-" let g:hardtime_allow_different_key = 1
+let g:gitgutter_map_keys = 0
 
 " === Nerd commenter ===
 
