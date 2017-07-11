@@ -11,10 +11,10 @@ Para usar o plugin ack + the_silver_searcher, instalar:
 
 Adicionar em vundle.vim e rodar no terminal:
 
-```vim +PluginInstall +qall```
+```vim +PlugInstall +qall```
 
 # Atualizar plugins
-```vim +PluginUpdate +qall```
+```vim +PlugUpdate +qall```
 
 # Como usar
 
