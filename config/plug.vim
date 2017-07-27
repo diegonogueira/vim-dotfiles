@@ -18,7 +18,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 Plug 'janko-m/vim-test'
-Plug 'elixir-lang/vim-elixir', { 'branch': 'indent-performance' }
+Plug 'elixir-lang/vim-elixir'
 Plug 'kana/vim-altr'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'slim-template/vim-slim'
