@@ -1,20 +1,27 @@
+# Instalar MacVim
+
+```
+brew install macvim
+```
+
 # Instalação
 ```bash
 sh -c "`curl -fsSL https://raw.github.com/diegonogueira/vim-dotfiles/master/install.sh`"
 ```
 
-Para usar o plugin ack + the_silver_searcher, instalar:
+# Para usar o plugin ack + the_silver_searcher, instalar:
 
 ```brew install the_silver_searcher```
 
 # Instalar plugin
 
-Adicionar em vundle.vim e rodar no terminal:
+# Adicionar em vundle.vim e rodar no terminal:
 
-```vim +PlugInstall +qall```
+```vim +PluginInstall +qall```
 
 # Atualizar plugins
-```vim +PlugUpdate +qall```
+
+```vim +PluginUpdate +qall```
 
 # Como usar
 

@@ -16,12 +16,12 @@ git clone git@github.com:diegonogueira/vim-dotfiles.git .vim.d
 
 # create symbol links
 ln -sf ~/.vim.d/vimrc.vim ~/.vimrc
-mkdir ~/.vim
+mkdir -p ~/.vim/bundle
 
 # clone vundle plugin
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-vim +PlugInstall +qall
+# install all plugins
+vim +PluginInstall +qall
 
 echo 'Instaled!'
