@@ -30,6 +30,7 @@ source ~/.vim.d/config/easyalign.vim
 source ~/.vim.d/config/colorizer.vim
 source ~/.vim.d/config/vim-altr.vim
 source ~/.vim.d/config/ale.vim
+source ~/.vim.d/config/vim-mix-format.vim
 
 " vim config
 source ~/.vim.d/config/editor.vim

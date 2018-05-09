@@ -38,6 +38,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets.git'
 Plugin 'vim-airline/vim-airline'
 Plugin 'trevordmiller/nova-vim'
+Plugin 'mhinz/vim-mix-format'
 
 call vundle#end()
 filetype plugin indent on
