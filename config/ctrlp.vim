@@ -12,4 +12,5 @@ set wildcharm=<Tab>
 nnoremap <leader>pp :CtrlP ~<Tab>
 nnoremap <leader>pf :CtrlP<cr>
 nnoremap <leader>pb :CtrlPBuffer<cr>
+nnoremap <leader>pr :CtrlPMRU<cr>
 nnoremap <leader>pI :CtrlPClearCache<cr>

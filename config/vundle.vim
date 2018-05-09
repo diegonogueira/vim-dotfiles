@@ -36,6 +36,7 @@ Plugin 'tomtom/tlib_vim.git'
 Plugin 'MarcWeber/vim-addon-mw-utils.git'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets.git'
+Plugin 'vim-airline/vim-airline'
 Plugin 'trevordmiller/nova-vim'
 
 call vundle#end()
