@@ -3,7 +3,9 @@
 " ===================
 
 set runtimepath+=~/.vim.d/vim/ " load snippets
-let mapleader="\<Space>"       " define mapleader as SPACE
+" let mapleader="\<Space>"       " define mapleader as SPACE
+nnoremap <space> <Nop>
+map <space> <leader>
 
 " ============================
 " ====== plugin manager ======
@@ -26,6 +28,8 @@ source ~/.vim.d/config/dash.vim
 source ~/.vim.d/config/vim-multiple-cursors.vim
 source ~/.vim.d/config/vim-test.vim
 source ~/.vim.d/config/vim-visualstart.vim
+source ~/.vim.d/config/vim-airline.vim
+source ~/.vim.d/config/vim-gitgutter.vim
 source ~/.vim.d/config/easyalign.vim
 source ~/.vim.d/config/colorizer.vim
 source ~/.vim.d/config/vim-altr.vim

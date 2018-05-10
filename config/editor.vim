@@ -24,19 +24,20 @@ colorscheme nova       " set theme
 " ===================
 
 " file
-nnoremap <leader>fa :saveas %<TAB> " save file as
-nnoremap <leader>fR :edit!<CR>     " reload the file
-nnoremap <leader><Tab> :b#<CR>     " swap to last file
+nnoremap <leader>fa :saveas %<TAB>
+nnoremap <leader>fR :edit!<CR>
+nnoremap <leader><Tab> :b#<CR>
 
-" window
-nnoremap <Leader>wm <C-W>o " closes other windows
+" closes other windows
+nnoremap <Leader>wm <C-W>o
 
-" highlighting
-nnoremap <silent> <Esc><Esc> :let @/=""<CR> " Cancel highlighting
+" cancel highlighting
+nnoremap <silent> <Esc><Esc> :let @/=""<CR>
 
 " copy and paste
-vmap <C-c> "+yi
-vmap <C-x> "+c
+vmap <C-c> "+yi<ESC>
+vmap <C-x> "+c<ESC>
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 noremap Y y$
+vmap y ygv<Esc>
