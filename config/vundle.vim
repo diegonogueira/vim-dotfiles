@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=~/.fzf
+set rtp+=/usr/local/opt/fzf
 call vundle#begin()
 " Plugin 'VundleVim/Vundle.vim'
 
