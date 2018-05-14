@@ -3,7 +3,6 @@
 " ===================
 
 set runtimepath+=~/.vim.d/vim/ " load snippets
-" let mapleader="\<Space>"       " define mapleader as SPACE
 nnoremap <space> <Nop>
 map <space> <leader>
 
@@ -19,7 +18,7 @@ runtime! plugin/default.vim       " trick to override default settings from vim-
 " =================================
 
 " plugins config
-source ~/.vim.d/config/ctrlp.vim
+source ~/.vim.d/config/vim-fzf.vim
 source ~/.vim.d/config/camelcasemotion.vim
 source ~/.vim.d/config/nerdcommenter.vim
 source ~/.vim.d/config/nerdtree.vim
