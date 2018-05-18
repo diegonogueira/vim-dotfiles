@@ -30,7 +30,6 @@ source ~/.vim.d/config/vim-visualstart.vim
 source ~/.vim.d/config/vim-airline.vim
 source ~/.vim.d/config/vim-gitgutter.vim
 source ~/.vim.d/config/easyalign.vim
-source ~/.vim.d/config/colorizer.vim
 source ~/.vim.d/config/vim-altr.vim
 source ~/.vim.d/config/ale.vim
 source ~/.vim.d/config/vim-mix-format.vim

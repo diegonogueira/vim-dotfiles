@@ -1,7 +1,17 @@
-nnoremap <silent> <leader>pf :Files<CR>
-nnoremap <silent> <leader>pb :Buffers<CR>
-nnoremap <silent> <leader>pr :History<CR>
-nnoremap <leader>/ :GGrep<Space>
+function! FZFOpen(command_str)
+  if (expand('%') =~# 'NERD_tree' && winnr('$') > 1)
+    exe "normal! \<c-w>\<c-w>"
+  endif
+  exe 'normal! ' . a:command_str . "\<cr>"
+endfunction
+
+nnoremap <silent> <leader>pf :call FZFOpen(':Files')<CR>
+nnoremap <silent> <leader>pb :call FZFOpen(':Buffers')<CR>
+nnoremap <silent> <leader>pr :call FZFOpen(':History')<CR>
+nnoremap <silent> <leader>/ :call FZFOpen(':Ag')<CR>
+nnoremap <silent> <leader>pc :call FZFOpen(':Commands')<CR>
+nnoremap <silent> <leader>pl :call FZFOpen(':BLines')<CR>
+nnoremap <silent> <leader>pm :call FZFOpen(':Marks')<CR>
 
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 

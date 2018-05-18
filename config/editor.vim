@@ -30,6 +30,7 @@ nnoremap <leader><Tab> :b#<CR>
 
 " closes other windows
 nnoremap <Leader>wm <C-W>o
+nnoremap <Leader>q :q<CR><C-W>w
 
 " cancel highlighting
 nnoremap <silent> <Esc><Esc> :let @/=""<CR>
