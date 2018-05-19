@@ -4,7 +4,7 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 " defines maps
 map <silent> w <Plug>CamelCaseMotion_e
 map <silent> b <Plug>CamelCaseMotion_b
-map <silent> e <Plug>CamelCaseMotion_w
+noremap <silent> e w
 map <silent> ge <Plug>CamelCaseMotion_ge
 sunmap w
 sunmap b

@@ -26,6 +26,7 @@ source ~/.vim.d/config/easymotion.vim
 source ~/.vim.d/config/dash.vim
 source ~/.vim.d/config/vim-multiple-cursors.vim
 source ~/.vim.d/config/vim-test.vim
+source ~/.vim.d/config/asyncrun.vim
 source ~/.vim.d/config/vim-visualstart.vim
 source ~/.vim.d/config/vim-airline.vim
 source ~/.vim.d/config/vim-gitgutter.vim

@@ -5,15 +5,11 @@
 set list listchars=tab:\ \ ,trail:· " display tabs and trailing spaces visually
 set gcr=a:blinkon0                  " disable cursor blink
 autocmd BufWritePre * :%s/\s\+$//e  " auto trailing after save
+set nocursorline
 
 " ===================
 " ====== theme ======
 " ===================
-
-" for vim 8
-if (has("termguicolors"))
-  set termguicolors
-endif
 
 set background=dark    " set dark background
 set guifont=Monaco:h15 " set font
@@ -30,7 +26,8 @@ nnoremap <leader><Tab> :b#<CR>
 
 " closes other windows
 nnoremap <Leader>wm <C-W>o
-nnoremap <Leader>q :q<CR><C-W>w
+nnoremap <Leader>w<Tab> <C-W>p
+nnoremap <Leader>q :q<CR>
 
 " cancel highlighting
 nnoremap <silent> <Esc><Esc> :let @/=""<CR>
