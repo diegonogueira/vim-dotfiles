@@ -34,9 +34,10 @@ Plugin 'tomtom/tlib_vim.git'
 Plugin 'MarcWeber/vim-addon-mw-utils.git'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets.git'
-Plugin 'vim-airline/vim-airline'
-Plugin 'trevordmiller/nova-vim'
+Plugin 'itchyny/lightline.vim'
 Plugin 'mhinz/vim-mix-format'
+Plugin 'trevordmiller/nova-vim'
+Plugin 'diegonogueira/estilo-nova'
 
 call vundle#end()
 filetype plugin indent on
