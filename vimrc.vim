@@ -10,7 +10,7 @@ map <space> <leader>
 " ====== plugin manager ======
 " ============================
 
-source ~/.vim.d/config/vundle.vim " loads plugins
+source ~/.vim.d/config/plug.vim " loads plugins
 runtime! plugin/default.vim       " trick to override default settings from vim-better defaults
 
 " =================================
@@ -20,7 +20,7 @@ runtime! plugin/default.vim       " trick to override default settings from vim-
 " plugins config
 source ~/.vim.d/config/vim-fzf.vim
 source ~/.vim.d/config/camelcasemotion.vim
-source ~/.vim.d/config/nerdcommenter.vim
+source ~/.vim.d/config/vim-commentary.vim
 source ~/.vim.d/config/nerdtree.vim
 source ~/.vim.d/config/easymotion.vim
 source ~/.vim.d/config/dash.vim

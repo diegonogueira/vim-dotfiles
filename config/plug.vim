@@ -1,145 +1,37 @@
 call plug#begin('~/.vim/plugged')
 
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'VundleVim/Vundle.vim'
+Plug 'liuchengxu/vim-better-default'
 Plug 'mileszs/ack.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'bkad/CamelCaseMotion'
 Plug 'Raimondi/delimitMate'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'Lokaltog/vim-easymotion'
-Plug 'godlygeek/tabular'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'rizzatti/dash.vim'
 Plug 'michaeljsmith/vim-indent-object'
-Plug 'chaoren/vim-wordmotion'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
-Plug 'janko-m/vim-test'
-Plug 'elixir-lang/vim-elixir'
-Plug 'kana/vim-altr'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'slim-template/vim-slim'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'w0rp/ale'
-Plug 'diegonogueira/Zenburn'
-" Plug 'NLKNguyen/papercolor-theme'
-" Plug 'altercation/vim-colors-solarized'
-" Plug 'trevordmiller/nova-vim'
-Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-commentary'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/vim-easy-align'
+Plug 'easymotion/vim-easymotion'
+Plug 'sheerun/vim-polyglot'
+Plug 'janko-m/vim-test'
+Plug 'skywind3000/asyncrun.vim'
+Plug 'rizzatti/dash.vim'
+Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'w0rp/ale'
+Plug 'thinca/vim-visualstar'
+Plug 'brooth/far.vim'
+Plug 'vim-scripts/CmdlineComplete'
+Plug 'kana/vim-altr'
+Plug 'tomtom/tlib_vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'itchyny/lightline.vim'
+Plug 'mhinz/vim-mix-format'
+Plug 'trevordmiller/nova-vim'
+Plug 'diegonogueira/estilo-nova'
 
 call plug#end()
-
-" === Theme ===
-
-set background=dark
-"set background=light
-
-colorscheme zenburn
-" colorscheme nova
-" colorscheme solarized
-
-" === NerdThree ===
-
-map <leader>n :NERDTreeToggle<CR>
-nmap <leader>N :NERDTreeFind<CR>
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * wincmd l " move to left window
-"nmap <leader>r :NERDTreeFocus<cr>R<c-w><c-p>
-
-" === Airline ===
-
-set laststatus=2
-
-" === Dash ===
-
-:nnoremap <silent> <leader>dd :Dash<CR>
-:nnoremap <leader>df :Dash<leader>
-
-" === EasyMotion ===
-
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-let g:EasyMotion_smartcase = 1
-map <leader>/ <Plug>(easymotion-s2)
-" Move to word
-map  <Leader>? <Plug>(easymotion-bd-w)
-nmap <Leader>? <Plug>(easymotion-overwin-w)
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-
-" === Vim-test ===
-
-nmap <silent> <leader>tl :TestNearest<CR>
-nmap <silent> <leader>tb :TestFile<CR>
-nmap <silent> <leader>ta :TestSuite<CR>
-nmap <silent> <leader>t. :TestLast<CR>
-nmap <silent> <leader>tv :TestVisit<CR>
-let test#filename_modifier = ":~"
-" let test#strategy = "basic"
-let test#strategy = "iterm"
-
-" === Vim wordmotion ===
-
-let g:wordmotion_mappings = {
-  \ 'w' : '<leader>l',
-  \ 'b' : '<leader>h',
-  \ 'e' : '<leader>j',
-  \ 'ge' : '<leader>k',
-  \ 'aw' : '<leader>l',
-  \ 'iw' : 'i<space>l'
-  \ }
-
-" === Ack ===
-
-let g:ackprg = 'ag --vimgrep --ignore-dir=public/uploads --ignore-dir=tmp --ignore-dir=log --ignore-dir=doc --ignore="*.sql"'
-
-" === CtrlP ===
-
-" nnoremap <leader>p <Nop>
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_mruf_relative = 1
-
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
-let g:ctrlp_prompt_mappings = {
-  \ 'PrtDeleteEnt()': ['<c-@>']
-  \ }
-
-set wildcharm=<Tab>
-nnoremap <leader>p :CtrlP ~<Tab>
-nnoremap <leader>f :CtrlP<cr>
-nnoremap <leader>b :CtrlPBuffer<cr>
-nnoremap <leader>C :CtrlPClearCache<cr>
-
-" === ALE ===
-
-" Write this in your vimrc file
-let g:ale_lint_on_text_changed = 'never'
-" You can disable this option too
-" if you don't want linters to run on opening a file
-let g:ale_lint_on_enter = 0
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
-
-" === Altr ===
-
-call altr#define('web/%/%.ex', 'test/%/%_test.exs', 'lib/%/%.ex')
-nmap <leader>tt <Plug>(altr-forward)
-
-" === Multiple cursors ===
-
-nnoremap <silent> <C-a> :MultipleCursorsFind <C-R>/<CR>
-vnoremap <silent> <C-a> :MultipleCursorsFind <C-R>/<CR>
-
-" === Gitgutter ===
-
-set updatetime=250
-let g:gitgutter_map_keys = 0
-
-" === Nerd commenter ===
-
-let g:NERDSpaceDelims = 1
