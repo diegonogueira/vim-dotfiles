@@ -1,8 +1,9 @@
 let test#filename_modifier = ":~"
 let test#strategy = "asyncrun"
 
-nmap <silent> ,tt :TestNearest<CR>
-nmap <silent> ,tb :TestFile<CR>
-nmap <silent> ,ta :TestSuite<CR>
-nmap <silent> ,tr :TestLast<CR>
-nmap <silent> ,tv :TestVisit<CR>
+nnoremap , <Nop>
+nnoremap <silent> ,tt :TestNearest<CR>
+nnoremap <silent> ,tb :TestFile<CR>
+nnoremap <silent> ,ta :TestSuite<CR>
+nnoremap <silent> ,tr :TestLast<CR>
+nnoremap <silent> ,tv :TestVisit<CR>
