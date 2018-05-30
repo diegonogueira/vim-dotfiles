@@ -3,5 +3,5 @@ augroup vimrc
 augroup END
 
 noremap <silent> <leader>ast :call asyncrun#quickfix_toggle(8)<cr>
-noremap <silent> <leader>ask :botright copen 25<cr>
-noremap <silent> <leader>asj :botright copen 8<cr>
+noremap <silent> <leader>ask :botright copen 25<cr><C-w>W
+noremap <silent> <leader>asj :botright copen 8<cr><C-w>W
