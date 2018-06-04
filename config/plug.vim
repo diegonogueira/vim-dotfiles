@@ -20,9 +20,8 @@ Plug 'janko-m/vim-test'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'tpope/vim-surround'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi'
 Plug 'w0rp/ale'
-Plug 'thinca/vim-visualstar'
 Plug 'brooth/far.vim'
 Plug 'vim-scripts/CmdlineComplete'
 Plug 'kana/vim-altr'
@@ -33,5 +32,12 @@ Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-mix-format'
 Plug 'trevordmiller/nova-vim'
 Plug 'diegonogueira/estilo-nova'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 call plug#end()

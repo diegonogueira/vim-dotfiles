@@ -11,20 +11,21 @@ map <space> <leader>
 " ============================
 
 source ~/.vim.d/config/plug.vim " loads plugins
-runtime! plugin/default.vim       " trick to override default settings from vim-better defaults
+runtime! plugin/default.vim     " trick to override default settings from vim-better defaults
 
 " =================================
 " ====== load plugins config ======
 " =================================
 
 " plugins config
+source ~/.vim.d/config/ultisnips.vim
 source ~/.vim.d/config/vim-fzf.vim
 source ~/.vim.d/config/camelcasemotion.vim
 source ~/.vim.d/config/vim-commentary.vim
 source ~/.vim.d/config/nerdtree.vim
 source ~/.vim.d/config/easymotion.vim
 source ~/.vim.d/config/dash.vim
-source ~/.vim.d/config/vim-multiple-cursors.vim
+source ~/.vim.d/config/vim-visual-multi.vim
 source ~/.vim.d/config/vim-test.vim
 source ~/.vim.d/config/asyncrun.vim
 source ~/.vim.d/config/vim-visualstart.vim
@@ -34,6 +35,7 @@ source ~/.vim.d/config/vim-altr.vim
 source ~/.vim.d/config/ale.vim
 source ~/.vim.d/config/vim-mix-format.vim
 source ~/.vim.d/config/lightline.vim
+source ~/.vim.d/config/deoplete.vim
 
 " vim config
 source ~/.vim.d/config/editor.vim
