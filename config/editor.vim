@@ -13,7 +13,7 @@ set noshowcmd
 " ===================
 
 set background=dark    " set dark background
-set guifont=Monaco:h16 " set font
+set guifont=Monaco:h17 " set font
 colorscheme nova       " set theme
 
 " ===================
