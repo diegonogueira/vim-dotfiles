@@ -15,6 +15,9 @@ if has('gui_running')
   set fullscreen
 endif
 
+" http://vimhelp.appspot.com/change.txt.html#fo-table
+au FileType * set fo-=c fo-=r fo-=o
+
 " ===================
 " ====== theme ======
 " ===================
