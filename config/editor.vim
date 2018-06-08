@@ -5,8 +5,15 @@
 set list listchars=tab:\ \ ,trail:· " display tabs and trailing spaces visually
 set gcr=a:blinkon0                  " disable cursor blink
 autocmd BufWritePre * :%s/\s\+$//e  " auto trailing after save
+set shiftwidth=2                    " Use indents of 2 spaces
+set tabstop=2                       " An indentation every four columns
+set softtabstop=2                   " Let backspace delete indent
+set nostartofline
 set nocursorline
 set noshowcmd
+if has('gui_running')
+  set fullscreen
+endif
 
 " ===================
 " ====== theme ======
