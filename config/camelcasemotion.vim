@@ -1,5 +1,5 @@
 " define motion key
-call camelcasemotion#CreateMotionMappings('<leader>')
+" call camelcasemotion#CreateMotionMappings('<leader>')
 
 " defines maps
 map <silent> w <Plug>CamelCaseMotion_e
