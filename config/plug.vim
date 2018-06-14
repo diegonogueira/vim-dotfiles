@@ -41,12 +41,10 @@ endif
 
 " Vim textobj user
 Plug 'kana/vim-textobj-user'
-Plug 'Julian/vim-textobj-brace'
 Plug 'kana/vim-textobj-indent'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'kana/vim-textobj-line'
 Plug 'vim-scripts/matchit.zip'
 Plug 'adriaanzon/vim-textobj-matchit'
-Plug 'jceb/vim-textobj-uri'
 
 call plug#end()
