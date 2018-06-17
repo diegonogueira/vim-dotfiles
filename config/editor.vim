@@ -11,6 +11,7 @@ set softtabstop=2                   " Let backspace delete indent
 set nostartofline
 set nocursorline
 set noshowcmd
+set linespace=3
 if has('gui_running')
   set fullscreen
 endif
@@ -23,7 +24,8 @@ au FileType * set fo-=c fo-=r fo-=o
 " ===================
 
 set background=dark    " set dark background
-set guifont=Monaco:h17 " set font
+set macligatures
+set guifont=Fira\ Code:h17
 colorscheme nova       " set theme
 
 " ===================

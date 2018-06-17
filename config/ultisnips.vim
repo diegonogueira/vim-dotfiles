@@ -1,13 +1,16 @@
-let g:UltiSnipsExpandTrigger = "<nop>"
-let g:ulti_expand_or_jump_res = 0
+let g:UltiSnipsExpandTrigger = "<space>"
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
+" let g:ulti_expand_or_jump_res = 0
 
-function ExpandSnippetOrCarriageReturn()
-  let snippet = UltiSnips#ExpandSnippetOrJump()
-  if g:ulti_expand_or_jump_res > 0
-    return snippet
-  else
-    return "\<CR>"
-  endif
-endfunction
+" function ExpandSnippetOrCarriageReturn()
+"   let snippet = UltiSnips#ExpandSnippetOrJump()
+"   if g:ulti_expand_or_jump_res > 0
+"     return snippet
+"   else
+"     return "\<CR>"
+"   endif
+" endfunction
 
-inoremap <expr> <Tab> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
+" inoremap <expr> <Tab> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
+inoremap <expr> <Tab> pumvisible() ? "<CR>" : "\<Tab>"
