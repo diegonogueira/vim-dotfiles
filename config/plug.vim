@@ -19,7 +19,7 @@ Plug 'janko-m/vim-test'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'tpope/vim-surround'
-Plug 'mg979/vim-visual-multi'
+Plug 'mg979/vim-visual-multi', { 'branch': 'test' }
 Plug 'thinca/vim-visualstar'
 Plug 'w0rp/ale'
 Plug 'brooth/far.vim'

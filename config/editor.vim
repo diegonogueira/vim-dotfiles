@@ -12,9 +12,9 @@ set nostartofline
 set nocursorline
 set noshowcmd
 set linespace=3
-if has('gui_running')
-  set fullscreen
-endif
+" if has('gui_running')
+"   set fullscreen
+" endif
 
 " http://vimhelp.appspot.com/change.txt.html#fo-table
 au FileType * set fo-=c fo-=r fo-=o
@@ -24,7 +24,9 @@ au FileType * set fo-=c fo-=r fo-=o
 " ===================
 
 set background=dark    " set dark background
-set macligatures
+if has('gui_running')
+  set macligatures
+endif
 set guifont=Fira\ Code:h17
 colorscheme nova       " set theme
 
