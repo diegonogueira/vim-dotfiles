@@ -7,7 +7,7 @@ Plug 'liuchengxu/vim-better-default'
 Plug 'mileszs/ack.vim'
 Plug 'bkad/CamelCaseMotion'
 Plug 'Raimondi/delimitMate'
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -21,7 +21,9 @@ Plug 'rizzatti/dash.vim'
 Plug 'tpope/vim-surround'
 Plug 'mg979/vim-visual-multi', { 'branch': 'test' }
 Plug 'thinca/vim-visualstar'
-Plug 'w0rp/ale'
+Plug 'tpope/vim-repeat'
+Plug 'svermeulen/vim-easyclip'
+" Plug 'w0rp/ale'
 Plug 'brooth/far.vim'
 Plug 'vim-scripts/CmdlineComplete'
 Plug 'kana/vim-altr'
@@ -30,8 +32,6 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-mix-format'
-Plug 'trevordmiller/nova-vim'
-Plug 'diegonogueira/estilo-nova'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -44,8 +44,12 @@ endif
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-indent'
 Plug 'sgur/vim-textobj-parameter'
-Plug 'kana/vim-textobj-line'
 Plug 'vim-scripts/matchit.zip'
 Plug 'adriaanzon/vim-textobj-matchit'
+
+" Themes
+Plug 'trevordmiller/nova-vim'
+Plug 'diegonogueira/estilo-nova'
+Plug 'dracula/vim'
 
 call plug#end()

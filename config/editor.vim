@@ -27,8 +27,8 @@ set background=dark    " set dark background
 if has('gui_running')
   set macligatures
 endif
-set guifont=Fira\ Code:h17
-colorscheme nova       " set theme
+set guifont=Monaco:h16
+colorscheme nova      " set theme
 
 " ===================
 " ====== maps =======
@@ -47,9 +47,11 @@ nnoremap <Leader>w<Tab> <C-W>p
 nnoremap <silent> <Esc><Esc> :let @/=""<CR>
 
 " copy and paste
-vmap <C-c> "+yi<ESC>
-vmap <C-x> "+c<ESC>
-vmap <C-v> c<ESC>"+p
-imap <C-v> <ESC>"+pa
-noremap Y y$
-vmap y ygv<Esc>
+" vmap <C-c> "+yi<ESC>
+" vmap <C-x> "+c<ESC>
+" vmap <C-v> c<ESC>"+p
+" imap <C-v> <ESC>"+pa
+" noremap Y y$
+" vmap y ygv<Esc>
+
+unmap <leader>sc

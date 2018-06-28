@@ -29,10 +29,11 @@ source ~/.vim.d/config/vim-visual-multi.vim
 source ~/.vim.d/config/vim-test.vim
 source ~/.vim.d/config/asyncrun.vim
 source ~/.vim.d/config/vim-visualstart.vim
+source ~/.vim.d/config/vim-easyclip.vim
 source ~/.vim.d/config/vim-gitgutter.vim
 source ~/.vim.d/config/easyalign.vim
 source ~/.vim.d/config/vim-altr.vim
-source ~/.vim.d/config/ale.vim
+" source ~/.vim.d/config/ale.vim
 source ~/.vim.d/config/vim-mix-format.vim
 source ~/.vim.d/config/lightline.vim
 source ~/.vim.d/config/deoplete.vim
