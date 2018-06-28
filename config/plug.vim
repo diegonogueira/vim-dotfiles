@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'VundleVim/Vundle.vim'
 Plug 'liuchengxu/vim-better-default'
 Plug 'mileszs/ack.vim'
 Plug 'bkad/CamelCaseMotion'
