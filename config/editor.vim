@@ -28,7 +28,7 @@ if has('gui_running')
   set macligatures
 endif
 set guifont=Monaco:h16
-colorscheme nova      " set theme
+colorscheme nord      " set theme
 
 " ===================
 " ====== maps =======

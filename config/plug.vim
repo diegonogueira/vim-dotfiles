@@ -50,5 +50,6 @@ Plug 'adriaanzon/vim-textobj-matchit'
 Plug 'trevordmiller/nova-vim'
 Plug 'diegonogueira/estilo-nova'
 Plug 'dracula/vim'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
