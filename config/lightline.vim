@@ -1,7 +1,7 @@
 set noshowmode
 
 let g:lightline = {
-            \ 'colorscheme': 'nord',
+            \ 'colorscheme': 'nova',
             \ }
 
 let s:p = {"normal": {}, "inactive": {}, "insert": {}, "replace": {}, "visual": {}, "tabline": {} }
