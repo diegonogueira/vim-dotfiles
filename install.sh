@@ -31,5 +31,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # install all plugins
 vim +PlugInstall +qall
+nvim +PlugInstall +qall
+nvim +UpdateRemotePlugins +qall
 
 echo 'Instaled!'
