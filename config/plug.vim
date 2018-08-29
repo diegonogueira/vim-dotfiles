@@ -32,6 +32,8 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-mix-format'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
