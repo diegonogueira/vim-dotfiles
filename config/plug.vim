@@ -48,6 +48,8 @@ Plug 'kana/vim-textobj-indent'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'vim-scripts/matchit.zip'
 Plug 'adriaanzon/vim-textobj-matchit'
+Plug 'beloglazov/vim-textobj-quotes'
+Plug 'Julian/vim-textobj-brace'
 
 " Themes
 Plug 'trevordmiller/nova-vim'
