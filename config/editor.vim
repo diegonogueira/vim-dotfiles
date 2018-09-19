@@ -12,6 +12,7 @@ set nostartofline
 set nocursorline
 set noshowcmd
 set linespace=3
+set nofixendofline
 
 " http://vimhelp.appspot.com/change.txt.html#fo-table
 au FileType * set fo-=c fo-=r fo-=o

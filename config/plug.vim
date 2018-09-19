@@ -18,8 +18,8 @@ Plug 'janko-m/vim-test'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'tpope/vim-surround'
-" Plug 'mg979/vim-visual-multi', { 'branch': 'test' }
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', { 'branch': 'test' }
+" Plug 'terryma/vim-multiple-cursors'
 Plug 'thinca/vim-visualstar'
 Plug 'tpope/vim-repeat'
 Plug 'svermeulen/vim-easyclip'

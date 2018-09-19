@@ -1,4 +1,5 @@
-" let g:VM_default_mappings=0
+let g:VM_no_meta_mappings=1
+let g:VM_sublime_mappings=1
 
 " Called once right before you start selecting multiple cursors
 function! Multiple_cursors_before()
