@@ -53,7 +53,7 @@ Plug 'Julian/vim-textobj-brace'
 
 " Themes
 Plug 'trevordmiller/nova-vim'
-Plug 'diegonogueira/estilo-nova'
+" Plug 'diegonogueira/estilo-nova'
 Plug 'dracula/vim'
 Plug 'arcticicestudio/nord-vim'
 
