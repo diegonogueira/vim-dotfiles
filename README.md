@@ -2,6 +2,8 @@
 
 ```
 brew install macvim
+brew install python
+pip3 install neovim
 ```
 
 # Instalação
