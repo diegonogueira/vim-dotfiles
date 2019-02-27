@@ -52,9 +52,6 @@ Plug 'beloglazov/vim-textobj-quotes'
 Plug 'Julian/vim-textobj-brace'
 
 " Themes
-Plug 'trevordmiller/nova-vim'
-" Plug 'diegonogueira/estilo-nova'
-Plug 'dracula/vim'
-Plug 'arcticicestudio/nord-vim'
+Plug 'diegonogueira/nova-vim'
 
 call plug#end()

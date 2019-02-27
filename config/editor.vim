@@ -53,4 +53,4 @@ nnoremap <silent> <Esc><Esc> :let @/=""<CR>
 " noremap Y y$
 " vmap y ygv<Esc>
 
-unmap <leader>sc
+" unmap <leader>sc

@@ -1,5 +1,5 @@
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <C-K> <Plug>(ale_previous_wrap)
+nmap <silent> <C-J> <Plug>(ale_next_wrap)
 
 " let g:airline#extensions#ale#enabled = 1
 " Write this in your vimrc file
