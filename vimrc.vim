@@ -25,10 +25,11 @@ source ~/.vim.d/config/vim-commentary.vim
 source ~/.vim.d/config/nerdtree.vim
 source ~/.vim.d/config/easymotion.vim
 source ~/.vim.d/config/dash.vim
-source ~/.vim.d/config/vim-visual-multi.vim
 source ~/.vim.d/config/vim-test.vim
 source ~/.vim.d/config/asyncrun.vim
 source ~/.vim.d/config/vim-visualstart.vim
+" source ~/.vim.d/config/vim-visual-multi.vim
+source ~/.vim.d/config/vim-multiple-cursors.vim
 source ~/.vim.d/config/vim-easyclip.vim
 source ~/.vim.d/config/vim-gitgutter.vim
 source ~/.vim.d/config/easyalign.vim
