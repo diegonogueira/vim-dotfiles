@@ -34,6 +34,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-mix-format'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'takac/vim-hardtime'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -50,6 +51,7 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'adriaanzon/vim-textobj-matchit'
 Plug 'beloglazov/vim-textobj-quotes'
 Plug 'Julian/vim-textobj-brace'
+Plug 'terryma/vim-expand-region'
 
 " Themes
 Plug 'diegonogueira/nova-vim'

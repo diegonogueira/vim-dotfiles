@@ -1,0 +1,1 @@
+nunmap <Leader>sc

@@ -26,7 +26,7 @@ colorscheme nova      " set theme
 
 if has('gui_running')
   set macligatures
-  set guifont=Monaco:h16
+  set guifont=Monaco:h17
 endif
 
 " ===================

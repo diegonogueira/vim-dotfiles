@@ -18,6 +18,7 @@ runtime! plugin/default.vim     " trick to override default settings from vim-be
 " =================================
 
 " plugins config
+source ~/.vim.d/config/vim-better-default.vim
 source ~/.vim.d/config/ultisnips.vim
 source ~/.vim.d/config/vim-fzf.vim
 source ~/.vim.d/config/camelcasemotion.vim
@@ -38,6 +39,8 @@ source ~/.vim.d/config/vim-mix-format.vim
 source ~/.vim.d/config/lightline.vim
 source ~/.vim.d/config/deoplete.vim
 source ~/.vim.d/config/vim-textobj-user.vim
+
+source ~/.vim.d/config/vim-hardtime.vim
 
 " vim config
 source ~/.vim.d/config/editor.vim
