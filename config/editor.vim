@@ -34,7 +34,8 @@ endif
 " ===================
 
 " file
-nnoremap <leader>fa :saveas %<TAB>
+nnoremap <leader>fa :saveas <C-R>=expand("%")<CR>
+nnoremap <leader>fA :saveas <C-R>=expand("%:p:h")<CR>/
 nnoremap <leader>fR :edit!<CR>
 nnoremap <leader><Tab> :b#<CR>
 

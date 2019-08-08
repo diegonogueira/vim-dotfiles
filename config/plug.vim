@@ -55,5 +55,7 @@ Plug 'terryma/vim-expand-region'
 
 " Themes
 Plug 'diegonogueira/nova-vim'
+Plug 'jnurmine/Zenburn'
+Plug 'acepukas/vim-zenburn'
 
 call plug#end()
