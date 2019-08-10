@@ -2,7 +2,12 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 " Jump to anywhere you want with minimal keystrokes, with just one key binding.
 " `s{char}{label}`
-nmap <leader>s <Plug>(easymotion-overwin-f)
+nmap <leader>s <Plug>(easymotion-s)
+" nmap <leader>s <Plug>(easymotion-overwin-f)
+
+" Move to word
+map  <Leader>a <Plug>(easymotion-bd-w)
+" nmap <Leader>W <Plug>(easymotion-overwin-w)
 " or
 " `s{char}{char}{label}`
 " Need one more keystroke, but on average, it may be more comfortable.
@@ -14,6 +19,7 @@ let g:EasyMotion_smartcase = 1
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+map <Leader>l <Plug>(easymotion-bd-jk)
 
 " Gif config
 map  S <Plug>(easymotion-sn)

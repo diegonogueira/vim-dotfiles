@@ -35,6 +35,7 @@ Plug 'mhinz/vim-mix-format'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'takac/vim-hardtime'
+Plug 'slashmili/alchemist.vim'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
