@@ -13,7 +13,7 @@ nnoremap <silent> <leader>pc :call FZFOpen(':Commands')<CR>
 nnoremap <silent> <leader>pl :call FZFOpen(':BLines')<CR>
 nnoremap <silent> <leader>pm :call FZFOpen(':Marks')<CR>
 
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
