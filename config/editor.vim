@@ -40,9 +40,10 @@ endif
 " ===================
 
 " file
-nnoremap <leader>fa :saveas <C-R>=expand("%")<CR>
-nnoremap <leader>fA :saveas <C-R>=expand("%:p:h")<CR>/
-nnoremap <leader>fR :edit!<CR>
+nnoremap <Leader>s :update<CR>
+nnoremap <leader>S :saveas <C-R>=expand("%")<CR>
+" nnoremap <leader>fA :saveas <C-R>=expand("%:p:h")<CR>/
+nnoremap <leader>E :edit!<CR>
 nnoremap <leader><Tab> :b#<CR>
 
 " closes other windows

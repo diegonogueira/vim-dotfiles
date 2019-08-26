@@ -5,13 +5,13 @@ function! FZFOpen(command_str)
   exe 'normal! ' . a:command_str . "\<cr>"
 endfunction
 
-nnoremap <silent> <leader>pf :call FZFOpen(':Files')<CR>
-nnoremap <silent> <leader>pb :call FZFOpen(':Buffers')<CR>
-nnoremap <silent> <leader>pr :call FZFOpen(':History')<CR>
-nnoremap <silent> <leader>/ :call FZFOpen(':Ag')<CR>
-nnoremap <silent> <leader>pc :call FZFOpen(':Commands')<CR>
-nnoremap <silent> <leader>pl :call FZFOpen(':BLines')<CR>
-nnoremap <silent> <leader>pm :call FZFOpen(':Marks')<CR>
+nnoremap <silent> <leader>f :call FZFOpen(':Files')<CR>
+nnoremap <silent> <leader>b :call FZFOpen(':Buffers')<CR>
+nnoremap <silent> <leader>r :call FZFOpen(':History')<CR>
+nnoremap <silent> <leader>g :call FZFOpen(':Ag')<CR>
+" nnoremap <silent> <leader>pc :call FZFOpen(':Commands')<CR>
+" nnoremap <silent> <leader>pl :call FZFOpen(':BLines')<CR>
+" nnoremap <silent> <leader>pm :call FZFOpen(':Marks')<CR>
 
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 

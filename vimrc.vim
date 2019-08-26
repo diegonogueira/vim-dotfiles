@@ -11,14 +11,13 @@ map <space> <leader>
 " ============================
 
 source ~/.vim.d/config/plug.vim " loads plugins
-runtime! plugin/default.vim     " trick to override default settings from vim-better defaults
+source ~/.vim.d/config/vim-better-default.vim
 
 " =================================
 " ====== load plugins config ======
 " =================================
 
 " plugins config
-source ~/.vim.d/config/vim-better-default.vim
 source ~/.vim.d/config/ultisnips.vim
 source ~/.vim.d/config/vim-fzf.vim
 source ~/.vim.d/config/camelcasemotion.vim

@@ -1,2 +1,2 @@
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
+xmap <leader>= <Plug>(EasyAlign)
+nmap <leader>= <Plug>(EasyAlign)

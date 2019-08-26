@@ -2,11 +2,11 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 " Jump to anywhere you want with minimal keystrokes, with just one key binding.
 " `s{char}{label}`
-nmap <leader>s <Plug>(easymotion-s)
+nmap <leader>a <Plug>(easymotion-s)
 " nmap <leader>s <Plug>(easymotion-overwin-f)
 
 " Move to word
-map  <Leader>a <Plug>(easymotion-bd-w)
+map  <Leader>A <Plug>(easymotion-bd-w)
 " nmap <Leader>W <Plug>(easymotion-overwin-w)
 " or
 " `s{char}{char}{label}`
@@ -19,11 +19,11 @@ let g:EasyMotion_smartcase = 1
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
-map <Leader>l <Plug>(easymotion-bd-jk)
+" map <Leader>l <Plug>(easymotion-bd-jk)
 
 " Gif config
-map  S <Plug>(easymotion-sn)
-omap S <Plug>(easymotion-tn)
+map  <leader>/ <Plug>(easymotion-sn)
+omap <leader>/ <Plug>(easymotion-tn)
 
 " These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
 " Without these mappings, `n` & `N` works fine. (These mappings just provide

@@ -1,6 +1,6 @@
 let NERDTreeShowHidden=1
 
-noremap <leader>ft :NERDTreeToggle<CR>
-noremap <leader>pt :NERDTreeFind<CR>
+noremap <leader>t :NERDTreeToggle<CR>
+noremap <leader>T :NERDTreeFind<CR>
 
 " autocmd vimenter * NERDTree
