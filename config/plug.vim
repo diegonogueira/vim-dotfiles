@@ -15,7 +15,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
 Plug 'sheerun/vim-polyglot'
 Plug 'janko-m/vim-test'
-Plug 'skywind3000/asyncrun.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'tpope/vim-surround'
 Plug 'mg979/vim-visual-multi', { 'branch': 'test' }
@@ -44,6 +43,7 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+Plug 'benmills/vimux'
 
 " Vim textobj user
 Plug 'kana/vim-textobj-user'
