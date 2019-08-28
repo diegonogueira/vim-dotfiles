@@ -33,7 +33,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-mix-format'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'takac/vim-hardtime'
+" Plug 'takac/vim-hardtime'
 Plug 'slashmili/alchemist.vim'
 Plug 'vim-ruby/vim-ruby'
 if has('nvim')
